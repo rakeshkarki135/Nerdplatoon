@@ -2,9 +2,8 @@ def typecheck(listObject):
      first = listObject[0]
      index = type(first)
      for i in listObject:
-     if not isinstance(i, (index,)):
-          return False
-
+          if not isinstance(i, index):
+               return False
      return True
 
 list1 = [1,2,3,4,5,6,7]

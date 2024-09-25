@@ -6,6 +6,6 @@ def countryDivider(countryList):
 
      return list1,list2
 
-     country_list = ["india","china","nepal","indonesia","malayasia","japan","tahiland"]
+country_list = ["india","china","nepal","indonesia","malayasia","japan","tahiland"]
 
 print(countryDivider(country_list))

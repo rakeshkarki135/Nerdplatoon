@@ -6,8 +6,8 @@ unique_words = []
 for i in words:
      count = words.count(i)
      if count == 1:
-     unique_words.append(i)
+          unique_words.append(i)
      else:
-     continue
+          continue
 
 print(unique_words)
