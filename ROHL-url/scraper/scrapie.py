@@ -20,9 +20,52 @@ def get_current_directory():
 def detailScraper(driver, wait, url):
      driver.get(url)
      
-     # Scrape detail text
-     detail = driver.find_element(By.ID, "slick-slide00")
-     detail_txt = detail.text.strip() if detail else 'Nan'
+     # Scrape detail text from carousel
+     try:
+          cookie_banner = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'plmr-c-cookie-notification')))
+          cookie_close_button = cookie_banner.find_element(By.TAG_NAME, 'button')
+          cookie_close_button.click()
+          
+     except:
+          pass
+     
+     # detail = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'plmr-c-carousel-mega-title-copy__item-content')))
+     length = driver.find_element(By.CSS_SELECTOR, '.plmr-c-carousel-mega-title-copy__arrow.slick-next.slick-arrow').text.strip()
+     length = int(length)
+     # print(type(length))
+     
+     detail = []
+     
+     for i in range(length):
+          
+          carousel_content_container = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.plmr-c-carousel-mega-title-copy__item.slick-slide.slick-current.slick-active')))
+          
+          if carousel_content_container:
+               # Extract content within the container
+               carousel_content = carousel_content_container.find_element(By.CLASS_NAME, 'plmr-c-carousel-mega-title-copy__item-content')
+               
+               # Extract and print the text if content exists
+               if carousel_content:
+                    carousel_text = [carousel_content.text.strip()]
+                    # print(i, carousel_text)
+                    detail.append(carousel_text)
+                    
+          
+          # Locate the next button container
+          carousel_external_container = driver.find_element(By.CLASS_NAME, 'plmr-c-carousel-mega-title-copy__nav-container')
+          
+          carousel_button_container = carousel_external_container.find_element(By.CLASS_NAME, 'plmr-c-carousel-mega-title-copy__nav-bar') if carousel_external_container else None
+          
+          if carousel_button_container:
+               next_button = carousel_button_container.find_element(By.CSS_SELECTOR, '.plmr-c-carousel-mega-title-copy__arrow.slick-next.slick-arrow')
+                    
+               # Click the next button if it exists
+               driver.execute_script('arguments[0].scrollIntoView();', next_button)
+               
+               # click using js to avoid interception
+               driver.execute_script("arguments[0].click();", next_button)
+               
+
 
      # Scrape features
      features_box = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".plmr-c-banner-list-items__content.plmr-c-general-content.js-product-features")))
@@ -63,7 +106,7 @@ def detailScraper(driver, wait, url):
      file_link = file_con.find_element(By.TAG_NAME, 'a') if file_con else None
      file = file_link.get_attribute('href') if file_link else 'Nan'
 
-     return detail_txt, features, specification, finishes, file
+     return detail, features, specification, finishes, file
 
 def update_csv(df,i,detail_txt, features, specification, finishes, file):
      df.at[i, 'Detail'] = detail_txt
