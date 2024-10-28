@@ -30,8 +30,10 @@ def urlExtractor(driver, url):
                container = box.find_element(By.CSS_SELECTOR, '.white-box.property-list-item.relative')
                link_tag = container.find_elements(By.TAG_NAME, 'a') if container else None
                tag = link_tag[1] if container else None
-               link = [tag.get_attribute('href')] if tag else 'Nan'  
-               links.append(link)
+               link = tag.get_attribute('href') if tag else 'Nan'  
+               
+               if link not in links:
+                    links.append(link)
                
                
           # to scroll the page to bottom
@@ -50,6 +52,7 @@ def urlExtractor(driver, url):
                     else:
                          url = url.get_attribute('href')
                          print(url)
+                         
                          
           except Exception as e:
                break
