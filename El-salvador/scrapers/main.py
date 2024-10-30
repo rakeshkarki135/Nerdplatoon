@@ -16,6 +16,14 @@ def driverInitialization():
      driver.maximize_window()
      return driver
 
+
+def generate_unique_uuid(df):
+     while True:
+          uuids = uuid.uuid4()
+          
+          if uuids not in df['uuid'].values:
+               return uuids
+
 def detailScraper(i, df, url, driver):
      
      driver.get(url)
@@ -27,17 +35,17 @@ def detailScraper(i, df, url, driver):
           WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.col-10.sm-col-10.md-col-10.lg-col-8.mx-auto.body-text.justify.relative')))
      
      except Exception as e:
-          print(f'Error Occured : {e}')
+          pass
      
      # for urls
-     df.at[i, 'links'] = url
+     df.at[i, 'link'] = url
      
      
      try:
           main_container = soup.find('div', class_='col-10 sm-col-10 md-col-10 lg-col-8 mx-auto body-text justify relative')
 
      except Exception as e:
-          print(f'Error Occured while getting main container: {e}')
+          pass
 
      try:
           # for the title and code
@@ -50,14 +58,10 @@ def detailScraper(i, df, url, driver):
                     df.at[i, 'title'] = title
                     
                     code  = title_element.find('p', class_ = 'md-right').get_text(strip=True) if title_element else None
-                    df.at[i, 'code'] = code
-               else:
-                    print("Title Element is not Found")
-          else:
-               print("Main_container is not Found")
+                    df.at[i, 'code_number'] = code
           
      except Exception as e:
-          print(f'Error Occured while getting title and code : {e}')
+          pass
           
           
      # for country
@@ -65,7 +69,7 @@ def detailScraper(i, df, url, driver):
      
      # for uuid 
      uids = uuid.uuid4()
-     df.at[i, 'uuid'] = uids
+     df.at[i, 'uuid'] = generate_unique_uuid(df)
      
      
      try:
@@ -81,11 +85,10 @@ def detailScraper(i, df, url, driver):
                
                type = location_element[2].get_text(strip = True) if location_element else None
                df.at[i, 'type'] = type
-          else:
-               print("Location Element is not Found")
+          
           
      except Exception as e:
-          print(f'Error Occured while getting location and property type: {e}')
+          pass
      
      # for price
      try: 
@@ -100,76 +103,66 @@ def detailScraper(i, df, url, driver):
                          price = None
                     
                     df.at[i, 'price'] = price
-               else:
-                    print('Price Element is not Found')
-          else:
-               print("Main container is not Found")
+               
                
      except Exception as e:
-          print(f'Error Occured while getting price: {e}')
+          pass
           
-     
+          
      room = {}
      try:
-          room_details_element = main_container.find('div', class_ = 'clearfix mb2')
+          room_details_element = main_container.find('div', class_='clearfix mb2')
           
           if room_details_element:
-               boxes = room_details_element.find_all('div', class_ = 'col col-6 md-col-4 lg-col-2 py1 px2 center')
+               boxes = room_details_element.find_all('div', class_='col col-6 md-col-4 lg-col-2 py1 px2 center')
+               
                for box in boxes:
-                    key_element = box.find('p', class_ = 'text-80')
-                    value_element = box.find('div', class_ = 'inline-block text-80')
+                    key_element = box.find('p', class_='text-80')
+                    value_element = box.find('div', class_='inline-block text-80')
                     
                     if key_element and value_element:
                          key = key_element.text.strip()
                          value = value_element.text.strip().replace('x', '')
-                         # value = re.findall(r'\d+', value)[0]
                          
                          if key == 'Area of Land':
                               df.at[i, 'area_square_vara'] = value.replace('v2', '')
-                                   
+                         
                          elif key == 'Construction Area':
-                              df.at[i, key] = value.replace('m2', '')
-                              
+                              df.at[i, 'construction_area'] = value.replace('m2', '')
+                         
                          elif key == 'Bathrooms':
                               datas = value.split()
-                              df.at[i, 'full_bathroom'] = datas[0] if len(datas) > 0 else None
-                              
-                              df.at[i, 'half_bathroom'] = datas[1].replace('½','1') if len(datas) > 1 else None
-                              
+                              df.at[i, 'full_baths'] = datas[0] if len(datas) > 0 else None
+                              df.at[i, 'half_baths'] = datas[1].replace('½', '1') if len(datas) > 1 else None
+                         
                          elif 'Full baths' in key or 'half baths' in key:
-                              df.at[i, 'full_bathroom'] = value
-                              
+                              df.at[i, 'full_baths'] = value
                               half_bath = re.findall(r'\d+', key)
-                              
-                              df.at[i, 'half_bathroom'] = int(half_bath[0])
-                              
-                         else:
-                              df.at[i, key] = value
-                    
+                              df.at[i, 'half_baths'] = int(half_bath[0]) if half_bath else None
                          
-                    else:
-                         print("Missing key_element or value_element")
+                         elif key == 'Rooms':
+                              df.at[i, 'bedrooms'] = value
                          
+                         elif key == 'Parking Lot':
+                              df.at[i, 'parking'] = value
+
+               # Nested try-except for levels extraction
                try:
-                    levels_element = room_details_element.find('div', class_ = 'col col-6 md-col-4 lg-col-1 py1 px1 center')
+                    levels_element = room_details_element.find('div', class_='col col-6 md-col-4 lg-col-1 py1 px1 center')
                     
                     if levels_element:
                          levels = levels_element.get_text(strip=True)
-                         levels = re.findall(r'\d+', levels)
-                    else:
-                         levels = None
                          
-                    df.at[i, 'levels'] = levels[0]
-                    
+                         if levels:
+                              levels = re.findall(r'\d+', levels)
+                              df.at[i, 'levels'] = levels[0] if levels else None
+
                except Exception as e:
-                    print(f"Error Occured while getting levels : {e}")
-               
-          else:
-               print("Room Details element not Found")
-               
+                    pass
+
      except Exception as e:
-          print(f'Error Occured while getting room_details : {e}')
-          
+          pass
+
           
      try:
           type_element = room_details_element.find('div', class_ = 'col col-12 sm-col-12 lg-col-1 py1 px2 center')
@@ -185,17 +178,21 @@ def detailScraper(i, df, url, driver):
           
           
      except Exception as e:
-          print(f'Error Occured while getting privacy : {e}')
+          pass
           
      
      # for description
      try:
-          description = main_container.find('div', class_ = 'md-col md-col-8 px2 mb4').get_text(strip=True) if main_container else None
+          description_element = main_container.find('div', class_ = 'md-col md-col-8 px2 mb4')
           
-          df.at[i, 'description'] = str(description)
+          if description_element:
+               description = description_element.find_all(string=True, recursive=False)
+          
+          df.at[i, 'description'] = str(''.join(description).strip())
+          
           
      except Exception as e:
-          print(f'Error Occured while getting description: {e}')
+          pass
           
      
      # for image urls
@@ -222,17 +219,15 @@ def detailScraper(i, df, url, driver):
                     else:
                          img_url = None
                          
-               df.at[i, 'image_urls'] = str(img_urls) if img_urls else None
-          else:
-               print('Carousel Element not Found')
+               df.at[i, 'img_src'] = str(img_urls) if img_urls else None
      
      except Exception as e:
-          print(f'Error Occured while getting images : {e}')
+          pass
 
      created_time = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-     df.at[i, 'created_time'] = created_time
+     df.at[i, 'created_at'] = created_time
      uploaded_time = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-     df.at[i, 'uploaded_time'] = uploaded_time
+     df.at[i, 'updated_at'] = uploaded_time
 
 def mainScraper(new_df, driver):
      
@@ -253,7 +248,7 @@ def main():
      
      driver = driverInitialization()
      
-     new_df = pd.DataFrame(columns=['links'])
+     new_df = pd.DataFrame(columns=['link','uuid','phone','previous_price','price_unit'])
      
      mainScraper(new_df, driver)
      
@@ -261,7 +256,7 @@ def main():
      
      print('Data Scraping Completed')
      
-     df = new_df.dropna(subset=['title','image_urls'])
+     df = new_df.dropna(subset=['title','img_src'])
      
      df.to_csv('detail.csv', index=False)
           
@@ -269,3 +264,5 @@ def main():
 
 if __name__ == '__main__':
      main()
+
+
