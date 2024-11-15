@@ -1,0 +1,33 @@
+from decouple import config  
+from mysql import connector      
+
+db_name = str(config("SERVER_DB_NAME", cast = str))
+db_password = str(config("SERVER_DB_PASSWORD", cast = str))
+db_host = str(config("SERVER_DB_HOST", cast = str))
+db_port = config("SERVER_DB_PORT", cast = int)     
+db_user = str(config("SERVER_DB_USER", cast = str))
+
+def connect_database(
+     autocommit = False,
+     user : str = db_user,
+     password : str = db_password,
+     host : str = db_host,
+     port : int = db_port,
+     database : str = db_name
+     ):
+     try:
+          print("Database : ", database)
+          db_connection = connector.connect(
+               user = user,
+               password = password,
+               host = host,
+               port = port, 
+               database = database,
+               auth_plugin = "mysql_native_password",
+          )
+          db_connection.autocommit = autocommit
+          cursor = db_connection.cursor(dictionary=True)
+          return db_connection, cursor
+     
+     except Exception as e:
+          print(f"Error while connecting database : {e}")
