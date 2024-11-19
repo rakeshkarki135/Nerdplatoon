@@ -46,7 +46,7 @@ def driver_initialization():
 
 def connect_database_with_sqlalchemy():
      try:
-          url = 'mysql+pymysql://root:@localhost:3306/practice'
+          url = 'mysql+pymysql://root:@localhost:3306/nerdpractice'
           engine = create_engine(url)
           return engine
      except Exception as e:
@@ -135,9 +135,7 @@ def delete_not_found_item(result : dict) -> None:
      cursor.execute(query, query_tuple)
      db_connection.commit()
      id_of_link_from_db = get_link_id_from_db(result['link'])
-     print(f'Successfully deleted the data of link : {result['link']} with id : {id_of_link_from_db}')
-from datetime import datetime
-import pandas as pd
+     print(f"Successfully deleted the data of link : {result['link']} with id : {id_of_link_from_db}")
 
 def validation_with_db(db_data: pd.DataFrame, extracted_data: dict) -> tuple[dict | None, bool]:
      VALUE_CHANGED = False
@@ -225,7 +223,7 @@ def update_data(changed_data : dict) -> None:
           db_connection.ping(reconnect=True)
           cursor.execute(update_query, tuple(update_values))
           db_connection.commit()
-          print(f'Successfully updated data for link : {changed_data['link']}')
+          print(f"Successfully updated data for link : {changed_data['link']}")
           
      except Exception as e:
           db_connection.rollback()

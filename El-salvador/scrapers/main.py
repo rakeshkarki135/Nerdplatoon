@@ -13,6 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def driverInitialization():
      driver = webdriver.Chrome()
+     driver.set_page_load_timeout(180)
      driver.maximize_window()
      return driver
 
@@ -31,7 +32,7 @@ def detailScraper(i, df, url, driver):
      soup = BeautifulSoup(driver.page_source, 'lxml')
 
      try:
-          WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.col-10.sm-col-10.md-col-10.lg-col-8.mx-auto.body-text.justify.relative')))
+          WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.col-10.sm-col-10.md-col-10.lg-col-8.mx-auto.body-text.justify.relative')))
      
      except Exception as e:
           pass
@@ -124,7 +125,8 @@ def detailScraper(i, df, url, driver):
                          value = value_element.text.strip().replace('x', '')
                          
                          if key == 'Area of Land':
-                              df.at[i, 'area_square_vara'] = value.replace('v2', '')
+                              value = value.replace('v2', '')
+                              df.at[i, 'area_square_vara'] = float(value)
                          
                          elif key == 'Construction Area':
                               df.at[i, 'construction_area'] = value.replace('m2', '')
