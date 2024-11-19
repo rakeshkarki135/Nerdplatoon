@@ -11,32 +11,18 @@ sys.path.append(el_salvador_dir)
 
 from base.db_connection import connect_database
 
+def data_cleaning(df: pd.DataFrame)-> pd.DataFrame:
+     df['deleted_at'] = None
+     
+     df = df.where(pd.notna(df), None)
+     
+     return df
 
-def insert_into_table(cursor, table):
-     
-     df = pd.read_csv('detail.csv')
-     df.fillna(
-          {
-          'price' : 0,
-          'area_square_vara' : 0,
-          'construction_area' : 0,
-          'bedrooms' : 0,
-          'full_baths' : 0,
-          'half_baths' : 0,
-          'parking' : 0,
-          'levels' : 0,
-     
-          },
-          
-          inplace=True
-     )
-     
-     df = df.fillna('')
-     
+
+def insert_into_table(cursor, table, df):
      placeholders = ', '.join(['%s'] * len(df.columns))
      columns = ', '.join(df.columns)
      insert_query = f'INSERT INTO {table} ({columns}) VALUES ({placeholders})'
-     
      
      try:
           # iteration through each row
@@ -52,7 +38,11 @@ def main():
      
      table = 'elsalvador'
      
-     insert_into_table(cursor, table)
+     df = pd.read_csv('detail.csv')
+     
+     cleaned_df = data_cleaning(df)
+     
+     insert_into_table(cursor, table, cleaned_df)
      
      print('Data Insetion into Database Completed')
      

@@ -31,8 +31,7 @@ def detailScraper(i, df, url, driver):
      soup = BeautifulSoup(driver.page_source, 'lxml')
 
      try:
-          WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CLASS_NAME, 'relative')))
-          WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.col-10.sm-col-10.md-col-10.lg-col-8.mx-auto.body-text.justify.relative')))
+          WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.col-10.sm-col-10.md-col-10.lg-col-8.mx-auto.body-text.justify.relative')))
      
      except Exception as e:
           pass
@@ -197,7 +196,7 @@ def detailScraper(i, df, url, driver):
      
      # for image urls
      
-     WebDriverWait(driver, 25).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.flex.items-center.carousel.mb1')))
+     WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.flex.items-center.carousel.mb1')))
 
      try:
           img_urls = []
@@ -228,6 +227,8 @@ def detailScraper(i, df, url, driver):
      df.at[i, 'created_at'] = created_time
      uploaded_time = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
      df.at[i, 'updated_at'] = uploaded_time
+     
+     return df
 
 def mainScraper(new_df, driver):
      
