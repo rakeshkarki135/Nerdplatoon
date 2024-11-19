@@ -1,8 +1,10 @@
 import re
 import pandas as pd
 import datetime 
-import requests     
+import requests  
+import concurrent.futures   
 
+from functools import partial
 from datetime import date 
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -119,20 +121,22 @@ def retrive_id_with_link(link : str) -> int:
 def delete_not_found_items(filtered_df: dict ) -> None:
      # creating values for the query
      query_tuple = (datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S"), datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S"), filtered_df['link'])
-     
      # connecting the database
      db_connection, cursor = connect_database(autocommit=True)
      db_connection.ping(reconnect=True)
-     
      # query execution
      cursor.execute(f'UPDATE {DB_TABLE_NAME} SET deleted_at = %s, updated_at = %s WHERE link = %s', query_tuple )
      db_connection.commit()
-     
      id_of_links_from_db = retrive_id_with_link(filtered_df['link'])
+     print(f'Successfully deleted the data of link : {filtered_df['link']} with id : {id_of_links_from_db}')
      
      
 def get_database_links(engine) -> pd.DataFrame:
-     query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior, interior, bedrooms, full_baths, partial_baths, property_type, amenities, exterior_details, new_features FROM bahamas where deleted_at is NULL"
+     # for bahamas
+     query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior, interior, bedrooms, full_baths, partial_baths, property_type, amenities, exterior_details, interior_details, property_details, new_features FROM bahamas where deleted_at is NULL"
+     
+     # for hgchristie
+     # query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior_acres, interior_sq_ft, bedrooms, full_baths, partial_baths, property_type, amneties, exterior_details, new_features, interior_details, property_details FROM hgchristie where deleted_at is NULL"
      
      df = pd.read_sql(query, con=engine)
      return df
@@ -176,15 +180,16 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
                               if extracted_value != db_value:
                                    VALUE_CHANGED = True
                                    changed_row[key] = extracted_value
+                                   
                     elif key in ['bedrooms','full_baths','partial_baths','exterior','interior','price']:
                          if extracted_value is not None and db_value is not None:
                               if str(float(extracted_value)) != str(float(db_value)):
                                    VALUE_CHANGED = True
                                    changed_row[key] = extracted_value
-                              else:
-                                   if str(extracted_value) != str(db_value):
-                                        VALUE_CHANGED = True
-                                        changed_row[key] = extracted_value
+                         else:
+                              if str(extracted_value) != str(db_value):
+                                   VALUE_CHANGED = True
+                                   changed_row[key] = extracted_value
                                         
                     else:
                          if str(extracted_value) != str(db_value):
@@ -199,7 +204,7 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
           
           if IMAGES_CHANGED:
                changed_row['id'] = db_row['id'].iloc[0]
-               changed_row['link'] = db_row['link']
+               changed_row['link'] = db_row['link'].iloc[0]
                changed_row['updated_at'] = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                changed_row['title'] = db_row['title'].iloc[0]
                changed_row['mls_id'] = db_row['web_id'].iloc[0]
@@ -214,8 +219,16 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
      else:
           return None, IMAGES_CHANGED      
 
+
+def check_null_value(data : dict) -> dict:
+     cleaned_data = {key :(None if pd.isna(value) else value) for key, value in data.items()}
+     return cleaned_data
+
+
 def update_data(changed_data : dict) -> None:
      db_connection,cursor = connect_database(autocommit=True)
+     # replacing the nan with None
+     changed_data = check_null_value(changed_data)
      update_fields = [f"{key} = %s" for key in changed_data.keys() if key not in ['id', 'link']]
      update_query = f"UPDATE {DB_TABLE_NAME} SET {', '.join(update_fields)} WHERE link = %s" 
      update_values = [changed_data[key] for key in changed_data.keys() if key not in ['id', 'link']]
@@ -224,10 +237,33 @@ def update_data(changed_data : dict) -> None:
           db_connection.ping(reconnect=True)
           cursor.execute(update_query, tuple(update_values))
           db_connection.commit()
-          print(f"Successfully updated data for query: {update_query} with values: {tuple(update_values)}")
+          print(f"Successfully updated database Data with new values for link : {changed_data['link']}")
      except Exception as e:
+          # the roll back undo all the changes if any exceptions occurs
           db_connection.rollback()
+          print(f'Error Occured while inserting into database in {changed_data['link']}  : {e}')
                
+
+def process_link(i, link, driver, db_data):
+     try:
+          print(i, link)
+          result = fetch_link(i, driver, link)
+          
+          if result['status_404'] == 1:
+               # update the database deleted_at column
+               delete_not_found_items(result)
+          else:
+               # update the database with new data
+               changed_data, IMAGES_CHANGED = validation_with_db_data(db_data, result)
+               if changed_data is not None and isinstance(changed_data , dict):
+                    # print("Change")
+                    # print(changed_data)
+                    update_data(changed_data)
+               else:
+                    print("No Change")
+                    
+     except Exception as e:
+          print(f'Error while getting data from the link {link} : {e}')
 
 def main():
      engine = connect_database_with_sqlalchemy()
@@ -237,23 +273,22 @@ def main():
      driver = driver_initialization()
 
      if len(links) > 0:
-          for i,link in enumerate(links):
-               try:
-                    print(i, link)
-                    result = fetch_link(i, driver, link)
-                    
-                    if result['status_404'] == 1:
-                         # update the database deleted_at column
-                         delete_not_found_items(result)
-                    else:
-                         # update the database with new data
-                         changed_data, IMAGES_CHANGED = validation_with_db_data(db_data, result)
-                         if changed_data is not None and isinstance(changed_data, dict):
-                              update_data(changed_data)
+          with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
                
-               except Exception as e:
-                    print(f'Error while getting data from the link {link} : {e}')
-     
+               # partial to pass the db_data and driver to function
+               process_func = partial(process_link, db_data=db_data, driver=driver) 
+               
+               # execute the link correctly
+               futures = {executor.submit(process_func, i, link):link for i, link in enumerate(links)}
+               
+               # wait fo all futures to complete and handle exceptions
+               for future in concurrent.futures.as_completed(futures):
+                    link = futures[future]
+                    try:
+                         future.result()
+                    except Exception as e: 
+                         print(f'Error occured while processing {link} : {e}')
+               
      driver.quit()
      
 if __name__ == '__main__':
