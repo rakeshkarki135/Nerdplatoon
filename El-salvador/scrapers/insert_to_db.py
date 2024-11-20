@@ -19,6 +19,7 @@ def data_cleaning(df: pd.DataFrame) -> pd.DataFrame:
     """
     # Replace NaN values with None for all columns
     # df = df.apply(lambda x: None if pd.isna(x) else x)
+    df['updated_at'] = None
     df = df.replace({pd.NA: None, np.nan: None})
 
     return df
