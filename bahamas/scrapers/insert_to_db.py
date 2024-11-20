@@ -5,7 +5,8 @@ from base.db_connection import connect_database
 
 def data_cleaning(df):
      # Remove commas in the 'exterior' column and convert to float
-     df['Exterior'] = df['Exterior'].astype(float)
+     # df['Exterior'] = df['Exterior'].astype(float)
+
      # Drop rows with missing critical columns 'title' or 'img_src'
      df.dropna(subset=['title', 'img_src'], inplace=True)
      # Replace NaN values with None
@@ -31,10 +32,18 @@ def insert_to_database(cursor, table_name, df):
 def main():
      db_connection, cursor = connect_database(autocommit=True)
      
-     df = pd.read_csv('details.csv')
+     # for bahamas
+     # df = pd.read_csv('details.csv')
+     
+     # for hgchristie
+     df = pd.read_csv('hgchristie.csv')
      new_df = data_cleaning(df)
      
-     table_name = 'bahamas'
+     # table_name = 'bahamas'
+     
+     # for hgchristie
+     table_name = 'hgchristie'
+     
      insert_to_database(cursor, table_name, new_df)
      
      print("Data Inserted into the Database")

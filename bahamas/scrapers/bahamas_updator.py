@@ -4,6 +4,7 @@ import datetime
 import requests  
 import concurrent.futures   
 
+from decouple import config
 from functools import partial
 from datetime import date 
 from bs4 import BeautifulSoup
@@ -34,7 +35,10 @@ HEADERS = {
      "x-requested-with": "XMLHttpRequest"
 }
 
-DB_TABLE_NAME = 'bahamas'
+DB_TABLE_NAME = 'hgchristie'
+# DB_TABLE_NAME = 'bahamas'
+
+mysql_alchemy_url = str(config("MYSQL_ALCHEMY_URL"))
 
 def driver_initialization():
      options = webdriver.ChromeOptions()
@@ -46,7 +50,7 @@ def driver_initialization():
 
 def connect_database_with_sqlalchemy():
      try:
-          db_url = 'mysql+pymysql://root:@localhost:3306/practice'
+          db_url = mysql_alchemy_url
           engine = create_engine(db_url)
           return engine
      except Exception as e:
@@ -128,15 +132,15 @@ def delete_not_found_items(filtered_df: dict ) -> None:
      cursor.execute(f'UPDATE {DB_TABLE_NAME} SET deleted_at = %s, updated_at = %s WHERE link = %s', query_tuple )
      db_connection.commit()
      id_of_links_from_db = retrive_id_with_link(filtered_df['link'])
-     print(f'Successfully deleted the data of link : {filtered_df['link']} with id : {id_of_links_from_db}')
+     print(f"Successfully deleted the data of link : {filtered_df['link']} with id : {id_of_links_from_db}")
      
      
 def get_database_links(engine) -> pd.DataFrame:
      # for bahamas
-     query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior, interior, bedrooms, full_baths, partial_baths, property_type, amenities, exterior_details, interior_details, property_details, new_features FROM bahamas where deleted_at is NULL"
+     # query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior, interior, bedrooms, full_baths, partial_baths, property_type, amenities, exterior_details, interior_details, property_details, new_features FROM bahamas where deleted_at is NULL"
      
      # for hgchristie
-     # query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior_acres, interior_sq_ft, bedrooms, full_baths, partial_baths, property_type, amneties, exterior_details, new_features, interior_details, property_details FROM hgchristie where deleted_at is NULL"
+     query = "SELECT id, title, uuid, link, mls_id, web_id, price, price_unit, img_src, about, exterior_acres, interior_sq_ft, bedrooms, full_baths, partial_baths, property_type, amneties, exterior_details, new_features, interior_details, property_details FROM hgchristie where deleted_at is NULL"
      
      df = pd.read_sql(query, con=engine)
      return df
@@ -161,8 +165,8 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
                     # getting the value from extracted data
                     extracted_value = extracted_data[key]
                     
-                    if db_value == '':
-                         db_value = None
+                    db_value = None if db_value == '' else db_value
+                     
                     if key == 'img_src':
                          # spliting the img_src string with , which gives list
                          db_value_copy = db_value.split(',') if db_value else []
@@ -183,9 +187,14 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
                                    
                     elif key in ['bedrooms','full_baths','partial_baths','exterior','interior','price']:
                          if extracted_value is not None and db_value is not None:
-                              if str(float(extracted_value)) != str(float(db_value)):
-                                   VALUE_CHANGED = True
-                                   changed_row[key] = extracted_value
+                              try:
+                                   if float(extracted_value) != float(db_value):
+                                        VALUE_CHANGED = True
+                                        changed_row[key] = extracted_value
+                              except ValueError:
+                                   if str(extracted_value) != str(db_value):
+                                        VALUE_CHANGED = True
+                                        changed_row[key] = extracted_value
                          else:
                               if str(extracted_value) != str(db_value):
                                    VALUE_CHANGED = True
@@ -241,7 +250,7 @@ def update_data(changed_data : dict) -> None:
      except Exception as e:
           # the roll back undo all the changes if any exceptions occurs
           db_connection.rollback()
-          print(f'Error Occured while inserting into database in {changed_data['link']}  : {e}')
+          print(f"Error Occured while inserting into database in {changed_data['link']}  : {e}")
                
 
 def process_link(i, link, driver, db_data):
@@ -273,7 +282,7 @@ def main():
      driver = driver_initialization()
 
      if len(links) > 0:
-          with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+          with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
                
                # partial to pass the db_data and driver to function
                process_func = partial(process_link, db_data=db_data, driver=driver) 
@@ -287,7 +296,7 @@ def main():
                     try:
                          future.result()
                     except Exception as e: 
-                         print(f'Error occured while processing {link} : {e}')
+                         print(f"rror occured while processing {link} : {e}")
                
      driver.quit()
      

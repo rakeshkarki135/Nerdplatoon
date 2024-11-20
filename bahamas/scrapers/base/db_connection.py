@@ -31,3 +31,4 @@ def connect_database(
      
      except Exception as e:
           print(f"Error while connecting database : {e}")
+          return None, None
