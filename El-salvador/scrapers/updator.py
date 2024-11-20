@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 import json
 
+from decouple import config
 from datetime import datetime
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
@@ -15,6 +16,8 @@ elsalvador_dir = os.path.abspath(os.path.join(current_dir, '..'))
 
 sys.path.append(elsalvador_dir)
 from base.db_connection import connect_database
+
+mysql_alchemy_url = str(config("MYSQL_ALCHEMY_URL"))
 
 QUERYSTRING = {"ajaxcall":"true","ajaxtarget":"privatenotes,listingmeta,customlistinginfo_attributiontext,listingdetailsmap,routeplanner,listingcommunityinfo,metainformation,listingmeta_bottom,listingmedia,listingpropertydescription,listingtabtitles,listingtools_save_bottom,customlistinginfo_commentsshort,listingtools,listingtools_mobile,listinginfo,listingmarkettrendsmodule,localguidelistingdetailspage,listingdrivetime,listingphotos,listingdetails","cms_current_mri":"119274"}
 PAYLOAD = ""
@@ -50,7 +53,7 @@ def driver_initialization():
 
 def connect_database_with_sqlalchemy():
      try:
-          url = 'mysql+pymysql://root:@localhost:3306/nerdpractice'
+          url = mysql_alchemy_url
           engine = create_engine(url)
           return engine
      except Exception as e:
