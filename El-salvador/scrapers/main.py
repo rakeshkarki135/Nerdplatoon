@@ -13,7 +13,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def driverInitialization():
      driver = webdriver.Chrome()
-     driver.set_page_load_timeout(180)
      driver.maximize_window()
      return driver
 
@@ -25,9 +24,18 @@ def generate_unique_uuid(df):
           if uuids not in df['uuid'].values:
                return uuids
 
+
+def get_link(url, driver):
+     try:
+          driver.get(url)
+     except TimeoutError:
+          driver.set_page_load_timeout(30)
+          driver.get(url)
+     
+     
 def detailScraper(i, df, url, driver):
      
-     driver.get(url)
+     get_link(url, driver)
      
      soup = BeautifulSoup(driver.page_source, 'lxml')
 
@@ -227,8 +235,8 @@ def detailScraper(i, df, url, driver):
 
      created_time = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
      df.at[i, 'created_at'] = created_time
-     uploaded_time = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-     df.at[i, 'updated_at'] = uploaded_time
+     
+     df.at[i, 'updated_at'] = None
      
      return df
 

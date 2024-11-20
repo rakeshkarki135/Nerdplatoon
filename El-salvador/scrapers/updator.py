@@ -37,8 +37,12 @@ DB_TABLE_NAME = 'elsalvador'
 
 def driver_initialization():
      options = webdriver.ChromeOptions()
-     options.add_argument("--headless")
-     options.add_argument("--disable-gpu")
+     # Configure Chrome options
+     options.add_argument("--headless")  # Run in headless mode
+     options.add_argument("--disable-gpu")  # Disable GPU acceleration
+     options.add_argument("--disable-webgl")
+     options.add_argument("--disable-software-rasterizer")
+     options.add_argument("--log-level=3")  # Suppress logs
      service = webdriver.ChromeService()
      driver = webdriver.Chrome(service=service, options=options)
      return driver
