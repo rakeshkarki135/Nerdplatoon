@@ -216,7 +216,7 @@ def validation_with_db_data(db_data: pd.DataFrame, extracted_data: dict) -> tupl
                changed_row['link'] = db_row['link'].iloc[0]
                changed_row['updated_at'] = datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                changed_row['title'] = db_row['title'].iloc[0]
-               changed_row['mls_id'] = db_row['web_id'].iloc[0]
+               changed_row['mls_id'] = db_row['mls_id'].iloc[0]
                changed_row['web_id'] = db_row['web_id'].iloc[0]
                changed_extracted_data.update(changed_row)
      else:
@@ -278,26 +278,13 @@ def main():
      engine = connect_database_with_sqlalchemy()
      db_data = get_database_links(engine)
      
-     links = db_data['link'].tolist()
+     links = db_data['link'].head(500)
      driver = driver_initialization()
 
      if len(links) > 0:
-          with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
-               
-               # partial to pass the db_data and driver to function
-               process_func = partial(process_link, db_data=db_data, driver=driver) 
-               
-               # execute the link correctly
-               futures = {executor.submit(process_func, i, link):link for i, link in enumerate(links)}
-               
-               # wait fo all futures to complete and handle exceptions
-               for future in concurrent.futures.as_completed(futures):
-                    link = futures[future]
-                    try:
-                         future.result()
-                    except Exception as e: 
-                         print(f"rror occured while processing {link} : {e}")
-               
+          for i,link in enumerate(links):
+               process_link(i, link, driver, db_data)
+           
      driver.quit()
      
 if __name__ == '__main__':
