@@ -1,0 +1,1377 @@
+[
+    {
+        "zoom": 12,
+        "lat": "43.6615804",
+        "lon": "-79.3767268",
+        "title": "JAC Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"285\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/10/308-Jarvis-Condos-Street-Level-View-Exterior-Render-4-285x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"308 Jarvis Condos - Street Level View - Exterior Render 4\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">JAC Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 639,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Graywood Developments Ltd. and Phantom Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/jac-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.64282",
+        "lon": "-79.41183",
+        "title": "Bellwoods House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"305\" src=\"https://precondo.ca/wp-content/uploads/2022/03/Bellwoods-House-Condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bellwoods House Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bellwoods House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 599,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Republic Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bellwoods-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6676544",
+        "lon": "-79.4420834",
+        "title": "Galleria On the Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"211\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Galleria-on-the-Park-Birds-Eye-View-Exterior-Render-3-211x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Galleria on the Park - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Galleria On the Park Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 617,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Elad Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/galleria-mall-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6429251",
+        "lon": "-79.3741862",
+        "title": "Sky Tower at Pinnacle One Yonge Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"299\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2018/05/sky-tower-at-pinnacle-one-yonge-condos-6.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Sky Tower at Pinnacle One Yonge Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,269,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Pinnacle</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/prestige-condos-pinnacle-one-yonge/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.6403378",
+        "lon": "-79.3821922",
+        "title": "Q Tower",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"407\" src=\"https://precondo.ca/wp-content/uploads/2020/07/Q-Tower-Jewel-Box-1.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Q Tower Jewel Box\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Q Tower</h3><div class=\"price-num\"> <span class=\"price-num\">$ 642,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Lifetime Developments and DiamondCorp</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/200-queens-quay-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7441571",
+        "lon": "-79.4075914",
+        "title": "Yonge City Square Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"436\" src=\"https://precondo.ca/wp-content/uploads/2022/12/Yonge-City-Square-Residences-Main1-Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Yonge City Square Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 651,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> The Gupta Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/yonge-city-square-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7746184",
+        "lon": "-79.3264296",
+        "title": "LSQ2 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"298\" src=\"https://precondo.ca/wp-content/uploads/2023/02/lsq2-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">LSQ2 Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 626,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Almadev</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/lsq-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6867341",
+        "lon": "-79.3937883",
+        "title": "The Hill Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"412\" src=\"https://precondo.ca/wp-content/uploads/2023/07/the-hill-residences.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Hill Residences</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Metropia</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-hill-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6463319",
+        "lon": "-79.4038722",
+        "title": "Reside on Richmond Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"482\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2023/07/reside-on-richmond-condos-2.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Reside on Richmond Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 551,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Originate Developments Inc. and Harlo Capital</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/reside-on-richmond-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6676544",
+        "lon": "-79.4420834",
+        "title": "Galleria On the Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"211\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Galleria-on-the-Park-Birds-Eye-View-Exterior-Render-3-211x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Galleria on the Park - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Galleria On the Park Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 617,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Elad Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/galleria-mall-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6381583",
+        "lon": "-79.4733023",
+        "title": "Southport in Swansea Square Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"375\" src=\"https://precondo.ca/wp-content/uploads/2019/06/Southport-in-Swansea-CondosMain1Featured-1.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Southport in Swansea Square Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 749,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> State Building</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/southport-square-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6657825",
+        "lon": "-79.4765846",
+        "title": "Craft Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"450\" src=\"https://precondo.ca/wp-content/uploads/2020/06/JORG_22GAIR-3200D_3200-Dundas_EXT-IMG-01-North-View_Mechanical-B-O1_220518125443.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Craft Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 496,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Gairloch</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/craft-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6365196",
+        "lon": "-79.4267364",
+        "title": "8 Temple Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"504\" src=\"https://precondo.ca/wp-content/uploads/2023/08/8-Temple-Condos-Front.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"8 Temple Condos - Front\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">8 Temple Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 714,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Liberty Village<br> <i class=\"fa fa-building\"></i> Curated Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/8-temple-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.674712",
+        "lon": "-79.40931",
+        "title": "ANX Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"269\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/05/The-ANX-Condos-Birds-Eye-View-Exterior-Render-269x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The ANX Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">ANX Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,145,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/anx-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6737191",
+        "lon": "-79.4122389",
+        "title": "Bianca Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"166\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Bianca-Main-300x166.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bianca Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bianca Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bianca-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.67098",
+        "lon": "-79.42757",
+        "title": "The Dupont Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"171\" src=\"https://precondo.ca/wp-content/uploads/2021/03/The-dupont-condosMain1Featured-300x171.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The-dupont-condosMain1Featured\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Dupont Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,040,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-dupont-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.64845",
+        "lon": "-79.38855",
+        "title": "Freed Hotel &#038; Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"404\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2020/12/Freed-Hotel-Condos-3FHR_Hero-1_V2.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Freed Hotel Condos - Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Freed Hotel &#038; Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 569,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/240-adelaide-street-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6467602",
+        "lon": "-79.3918082",
+        "title": "Plaza Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"359\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2017/07/plaza-theatre-district-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Theatre District Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6410858",
+        "lon": "-79.3928003",
+        "title": "Concord Canada House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"240\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Concord-Canada-House-main-300x240.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Concord Canada House main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Concord Canada House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 600,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/concord-canada-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7057521",
+        "lon": "-79.3962946",
+        "title": "Plaza Midtown Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"265\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Plaza-Midtown-Main-265x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Plaza Midtown Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Midtown Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 915,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-midtown-condos-1-and-2/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6702",
+        "lon": "-79.3865",
+        "title": "The One Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"229\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-One-Condos-Main-229x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The One Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The One Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Mizrahi Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-one-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.725149641316",
+        "lon": "-79.417226314545",
+        "title": "Avenue &#038; Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_11_09_04_00_44_af_1580av_05_physcamera002-5000-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 11 09 04 00 44 af 1580av 05 physcamera002 5000\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Avenue &#038; Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Stafford Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/avenue-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645772017828",
+        "lon": "-79.391002261346",
+        "title": "Bungalow on Mercer Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"180\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_07_28_10_38_24_24mercer_rendering3-180x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 07 28 10 38 24 24mercer rendering3\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bungalow on Mercer Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Kalovida Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bungalow-on-mercer-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645155851162",
+        "lon": "-79.36542284967",
+        "title": "Aquabella Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"225\" src=\"https://precondo.ca/wp-content/uploads/2017/07/building-design1-300x225.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"building design1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aquabella Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aquabella-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.667343069076",
+        "lon": "-79.345040544458",
+        "title": "The Lofthouse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"199\" src=\"https://precondo.ca/wp-content/uploads/2017/07/LofthouseRendering1-300x199.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"LofthouseRendering1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Lofthouse Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Grid Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-lofthouse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7097708",
+        "lon": "-79.395168",
+        "title": "65 Broadway Avenue Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"266\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/65-Broadway-Condos-Birds-Eye-View-Exterior-Render-266x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"65 Broadway Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">65 Broadway Avenue Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 865,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Times Group Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/65-broadway-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6423498",
+        "lon": "-79.3962044",
+        "title": "The Well Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"248\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Well-Condos-Main-300x248.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Well Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Well Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-well-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6977172",
+        "lon": "-79.5121298",
+        "title": "The Humber Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"281\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Humber-Condos-300x281.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Humber Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Humber Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 653,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Options for Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-humber-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6437869",
+        "lon": "-79.4329254",
+        "title": "57 Brock Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"192\" src=\"https://precondo.ca/wp-content/uploads/2017/07/57-Brock-Condos-300x192.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">57 Brock Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,320,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Block Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/fifty-seven-brock-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.7908837",
+        "lon": "-79.4187579",
+        "title": "6080 Yonge Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"451\" src=\"https://precondo.ca/wp-content/uploads/2020/08/6080-yonge-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">6080 Yonge Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 699,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/6080-yonge-street-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6599042",
+        "lon": "-79.35739",
+        "title": "The RIV",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"475\" height=\"597\" src=\"https://precondo.ca/wp-content/uploads/2020/05/the-riv-19.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The RIV</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto East<br> <i class=\"fa fa-building\"></i> Broccolini</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/83-river-street-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6552395",
+        "lon": "-79.3879075",
+        "title": "The United BLDG Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"411\" src=\"https://precondo.ca/wp-content/uploads/2017/07/main.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The United BLDG Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Davpart</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/481-university-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6445053",
+        "lon": "-79.398598",
+        "title": "King Toronto Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"195\" src=\"https://precondo.ca/wp-content/uploads/2017/07/KING-Toronto-Exterior-Render-3-300x195.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"KING Toronto - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">King Toronto Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,200,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Westbank</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/489-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6752661",
+        "lon": "-79.4014092",
+        "title": "346 Davenport Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2017_01_31_09_05_47_freed_346_davenport_rendering-300x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">346 Davenport Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 2,329,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/346-davenport-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6790528",
+        "lon": "-79.3980633",
+        "title": "Davies Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"259\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2014_06_25_09_34_46_thedaviescondos_rendering-300x259.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Davies Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Brandy-Lane</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-davies-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7192817",
+        "lon": "-79.3487413",
+        "title": "Auberge 2 on the Park",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"267\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2018_01_17_12_45_32_auberge2onthepark_rendering2-267x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Auberge 2 on the Park</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,150,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/auberge-2-park/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645308",
+        "lon": "-79.3619955",
+        "title": "Aqualuna Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"201\" src=\"https://precondo.ca/wp-content/uploads/2018/05/condo-1-300x201.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aqualuna Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aqualuna/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6710845",
+        "lon": "-79.3877873",
+        "title": "8 Cumberland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"160\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/8-cumberland-160x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">8 Cumberland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,249,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/8-cumberland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6474144",
+        "lon": "-79.3917184",
+        "title": "Encore Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"184\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_08_28_08_50_06_theatre_district_rendering-184x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Encore Theatre District Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 975,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/encore-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6625007",
+        "lon": "-79.4697324",
+        "title": "260 High Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_03_13_11_19_45_260highpark_rendering3-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">260 High Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Medallion Capital Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/260-high-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7029672",
+        "lon": "-79.3979073",
+        "title": "UOVO Boutique Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"214\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_01_24_09_41_13_uovoboutiqueresidences_rendering5-300x214.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">UOVO Boutique Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 999,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> The Sher Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/uovo-boutique-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6479877",
+        "lon": "-79.391839",
+        "title": "Central Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"210\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/central-condos-210x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Central Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/central-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6386112",
+        "lon": "-79.4276199",
+        "title": "XO Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"282\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/12/XO-Condos-Exterior-Render-2-282x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"XO Condos - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">XO Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,072,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Liberty Village<br> <i class=\"fa fa-building\"></i> Lifetime Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/xo-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7103589",
+        "lon": "-79.392595",
+        "title": "Line 5 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/01/2019_01_07_12_24_09_18091_southtowerelevatedb01_st0.75_5k0010-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Line 5 Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 599,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Reserve Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/line-5-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7046439",
+        "lon": "-79.3975399",
+        "title": "Y&#038;S Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"227\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/02/YS-Condos-227x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Y&#038;S Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,182,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Tribute</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/y-s-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.6516443",
+        "lon": "-79.3672536",
+        "title": "Allure Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"504\" src=\"https://precondo.ca/wp-content/uploads/2023/02/Allure-Condos-Main1Featured.webp\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Allure Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 739,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Emblem Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/allure-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6424295",
+        "lon": "-79.4264664",
+        "title": "1181 Queen West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/02/1181-Queen-Street-West-Street-Level-View-Exterior-Render-1-300x169.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"1181 Queen Street West - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">1181 Queen West Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Skale Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/1181-queen-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6605426",
+        "lon": "-79.356259",
+        "title": "River and Fifth Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"296\" src=\"https://precondo.ca/wp-content/uploads/2019/02/River-and-Fifth-Street-Level-View-Rendering-300x296.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"River and Fifth - Street Level View - Rendering\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">River and Fifth Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto East<br> <i class=\"fa fa-building\"></i> Broccolini</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/river-and-fifth-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6487956",
+        "lon": "-79.4855082",
+        "title": "Bijou on Bloor Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"198\" src=\"https://precondo.ca/wp-content/uploads/2019/04/Bijou-on-Bloor-Condos-Birds-Eye-View-Exterior-Render-300x198.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bijou on Bloor Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bijou on Bloor Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,950,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bijou-on-bloor-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6801953",
+        "lon": "-79.4335646",
+        "title": "St. Clair Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"249\" src=\"https://precondo.ca/wp-content/uploads/2019/06/Screen-Shot-2019-06-17-at-5.41.04-PM-300x249.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">St. Clair Village Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 902,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Canderel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/st-clair-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6457912",
+        "lon": "-79.3925144",
+        "title": "357 King West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"145\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/07/357-King-Street-West-Exterior-Render-2-145x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"357 King Street West - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">357 King West Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 659,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/357-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6633936",
+        "lon": "-79.3283852",
+        "title": "The Poet Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/07/The-Poet-Condos-Birds-Eye-View-Exterior-Render-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Poet Condos - Birds Eye View Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Poet Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 959,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Fieldgate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-poet-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6688248",
+        "lon": "-79.3835558",
+        "title": "55C Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"588\" src=\"https://precondo.ca/wp-content/uploads/2019/08/55c-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">55C Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> MOD Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/55c-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6532926",
+        "lon": "-79.3661856",
+        "title": "East 55 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"195\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/East-55-Condos-195x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"East 55 Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">East 55 Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Lamb Development</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/East-55-Condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6706912",
+        "lon": "-79.4783546",
+        "title": "Stockyards District Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"188\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Stockyards-District-Residences-Street-Level-View-Exterior-Render-300x188.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Stockyards District Residences - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Stockyards District Residences</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Marlin Spring Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/stockyards-district-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6460745",
+        "lon": "-79.400506",
+        "title": "123 Portland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"233\" src=\"https://precondo.ca/wp-content/uploads/2019/08/123-Portland-Condos-Street-Level-View-Exterior-Render-300x233.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"123 Portland Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">123 Portland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 651,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/123-portland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6517418",
+        "lon": "-79.3750032",
+        "title": "The Saint Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/The-Saint-Condos-Street-Level-View-Exterior-Render-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Saint Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Saint Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,159,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-saint-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7398638",
+        "lon": "-79.4855234",
+        "title": "The Keeley Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"179\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Keeley-Condos-300x179.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Keeley Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Keeley Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 399,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> TAS Design Build</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-keeley-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6667299",
+        "lon": "-79.3452198",
+        "title": "Elevate at Logan",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"180\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Elevate-at-Logan-Birds-Eye-View-Exterior-Render-2-300x180.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Elevate at Logan - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Elevate at Logan</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Kaleido Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/elevate-at-logan/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6650311",
+        "lon": "-79.4597092",
+        "title": "The Junction House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"227\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Junction-House-Street-Level-View-Exterior-Render-300x227.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Junction House - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Junction House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,800+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Globizen</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-junction-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.685003",
+        "lon": "-79.2753517",
+        "title": "Terrasse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"286\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Terrasse-Condos-286x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Terrasse Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Terrasse Condos</h3><div class=\"price-num\">$ N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> The Beaches<br> <i class=\"fa fa-building\"></i> Sunrise Gate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/terrasse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.718674",
+        "lon": "-79.4005599",
+        "title": "The Winslow Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"205\" src=\"https://precondo.ca/wp-content/uploads/2019/11/The-Winslow-300x205.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Winslow Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,797,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Devron Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-winslow-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7321903",
+        "lon": "-79.3064268",
+        "title": "The Vic Towns",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"250\" src=\"https://precondo.ca/wp-content/uploads/2019/11/The-Vic-Towns-300x250.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Vic Towns\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Vic Towns</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,199,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Solotex Corporation and Fortress Real</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-vic-towns/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.671477",
+        "lon": "-79.3895077",
+        "title": "The Pemberton",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"330\" src=\"https://precondo.ca/wp-content/uploads/2019/12/The-PembertonMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Pemberton</h3><div class=\"price-num\"> <span class=\"price-num\">$ 950,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Pemberton Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-residences-of-33-yorkville/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7020897",
+        "lon": "-79.3613839",
+        "title": "Leaside Manor",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"206\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Leaside-Manors-300x206.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Leaside Manor</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,752,400+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Baghai Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/leaside-manor/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7135214",
+        "lon": "-79.3603722",
+        "title": "Upper East Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"234\" src=\"https://precondo.ca/wp-content/uploads/2019/10/Upper-East-Village-Condos-Street-Level-View-Exterior-Render-300x234.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Upper East Village Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Upper East Village Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Diamond Corp</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/upper-east-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6615804",
+        "lon": "-79.3767268",
+        "title": "JAC Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"285\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/10/308-Jarvis-Condos-Street-Level-View-Exterior-Render-4-285x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"308 Jarvis Condos - Street Level View - Exterior Render 4\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">JAC Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 639,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Graywood Developments Ltd. and Phantom Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/jac-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6676544",
+        "lon": "-79.4420834",
+        "title": "Galleria On the Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"211\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Galleria-on-the-Park-Birds-Eye-View-Exterior-Render-3-211x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Galleria on the Park - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Galleria On the Park Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 617,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Elad Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/galleria-mall-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.76795",
+        "lon": "-79.38061",
+        "title": "625 Sheppard Avenue East Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"195\" src=\"https://precondo.ca/wp-content/uploads/2021/02/625-Sheppard-Avenue-East-CondosMain1Featured-300x195.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"625-Sheppard-Avenue-East-CondosMain1Featured\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">625 Sheppard Avenue East Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 999,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Canderel Residential</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/625-sheppard-avenue-east-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7097708",
+        "lon": "-79.395168",
+        "title": "65 Broadway Avenue Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"266\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/65-Broadway-Condos-Birds-Eye-View-Exterior-Render-266x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"65 Broadway Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">65 Broadway Avenue Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 865,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Times Group Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/65-broadway-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6702",
+        "lon": "-79.3865",
+        "title": "The One Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"229\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-One-Condos-Main-229x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The One Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The One Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Mizrahi Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-one-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6739242",
+        "lon": "-79.3733513",
+        "title": "No. 7 Rosedale Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"240\" src=\"https://precondo.ca/wp-content/uploads/2017/07/No.-7-RosedaleMain1Featured-300x240.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"No.-7-RosedaleMain1Featured\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">No. 7 Rosedale Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Platinum Vista</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-dale-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6429251",
+        "lon": "-79.3741862",
+        "title": "Sky Tower at Pinnacle One Yonge Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"299\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2018/05/sky-tower-at-pinnacle-one-yonge-condos-6.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Sky Tower at Pinnacle One Yonge Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,269,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Pinnacle</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/prestige-condos-pinnacle-one-yonge/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.674712",
+        "lon": "-79.40931",
+        "title": "ANX Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"269\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/05/The-ANX-Condos-Birds-Eye-View-Exterior-Render-269x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The ANX Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">ANX Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,145,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/anx-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6737191",
+        "lon": "-79.4122389",
+        "title": "Bianca Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"166\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Bianca-Main-300x166.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bianca Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bianca Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bianca-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6467602",
+        "lon": "-79.3918082",
+        "title": "Plaza Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"359\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2017/07/plaza-theatre-district-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Theatre District Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6410858",
+        "lon": "-79.3928003",
+        "title": "Concord Canada House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"240\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Concord-Canada-House-main-300x240.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Concord Canada House main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Concord Canada House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 600,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/concord-canada-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7057521",
+        "lon": "-79.3962946",
+        "title": "Plaza Midtown Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"265\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Plaza-Midtown-Main-265x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Plaza Midtown Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Midtown Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 915,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-midtown-condos-1-and-2/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6702",
+        "lon": "-79.3865",
+        "title": "The One Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"229\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-One-Condos-Main-229x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The One Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The One Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Mizrahi Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-one-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.725149641316",
+        "lon": "-79.417226314545",
+        "title": "Avenue &#038; Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_11_09_04_00_44_af_1580av_05_physcamera002-5000-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 11 09 04 00 44 af 1580av 05 physcamera002 5000\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Avenue &#038; Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Stafford Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/avenue-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645772017828",
+        "lon": "-79.391002261346",
+        "title": "Bungalow on Mercer Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"180\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_07_28_10_38_24_24mercer_rendering3-180x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 07 28 10 38 24 24mercer rendering3\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bungalow on Mercer Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Kalovida Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bungalow-on-mercer-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645155851162",
+        "lon": "-79.36542284967",
+        "title": "Aquabella Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"225\" src=\"https://precondo.ca/wp-content/uploads/2017/07/building-design1-300x225.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"building design1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aquabella Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aquabella-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.667343069076",
+        "lon": "-79.345040544458",
+        "title": "The Lofthouse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"199\" src=\"https://precondo.ca/wp-content/uploads/2017/07/LofthouseRendering1-300x199.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"LofthouseRendering1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Lofthouse Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Grid Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-lofthouse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7097708",
+        "lon": "-79.395168",
+        "title": "65 Broadway Avenue Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"266\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/65-Broadway-Condos-Birds-Eye-View-Exterior-Render-266x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"65 Broadway Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">65 Broadway Avenue Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 865,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Times Group Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/65-broadway-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6423498",
+        "lon": "-79.3962044",
+        "title": "The Well Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"248\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Well-Condos-Main-300x248.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Well Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Well Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-well-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6977172",
+        "lon": "-79.5121298",
+        "title": "The Humber Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"281\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Humber-Condos-300x281.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Humber Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Humber Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 653,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Options for Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-humber-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6437869",
+        "lon": "-79.4329254",
+        "title": "57 Brock Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"192\" src=\"https://precondo.ca/wp-content/uploads/2017/07/57-Brock-Condos-300x192.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">57 Brock Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,320,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Block Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/fifty-seven-brock-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6552395",
+        "lon": "-79.3879075",
+        "title": "The United BLDG Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"411\" src=\"https://precondo.ca/wp-content/uploads/2017/07/main.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The United BLDG Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Davpart</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/481-university-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6445053",
+        "lon": "-79.398598",
+        "title": "King Toronto Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"195\" src=\"https://precondo.ca/wp-content/uploads/2017/07/KING-Toronto-Exterior-Render-3-300x195.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"KING Toronto - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">King Toronto Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,200,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Westbank</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/489-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6752661",
+        "lon": "-79.4014092",
+        "title": "346 Davenport Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2017_01_31_09_05_47_freed_346_davenport_rendering-300x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">346 Davenport Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 2,329,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/346-davenport-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6790528",
+        "lon": "-79.3980633",
+        "title": "Davies Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"259\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2014_06_25_09_34_46_thedaviescondos_rendering-300x259.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Davies Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Brandy-Lane</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-davies-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7192817",
+        "lon": "-79.3487413",
+        "title": "Auberge 2 on the Park",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"267\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2018_01_17_12_45_32_auberge2onthepark_rendering2-267x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Auberge 2 on the Park</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,150,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/auberge-2-park/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645308",
+        "lon": "-79.3619955",
+        "title": "Aqualuna Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"201\" src=\"https://precondo.ca/wp-content/uploads/2018/05/condo-1-300x201.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aqualuna Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aqualuna/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6710845",
+        "lon": "-79.3877873",
+        "title": "8 Cumberland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"160\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/8-cumberland-160x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">8 Cumberland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,249,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/8-cumberland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6474144",
+        "lon": "-79.3917184",
+        "title": "Encore Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"184\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_08_28_08_50_06_theatre_district_rendering-184x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Encore Theatre District Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 975,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/encore-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6625007",
+        "lon": "-79.4697324",
+        "title": "260 High Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_03_13_11_19_45_260highpark_rendering3-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">260 High Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Medallion Capital Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/260-high-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7029672",
+        "lon": "-79.3979073",
+        "title": "UOVO Boutique Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"214\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_01_24_09_41_13_uovoboutiqueresidences_rendering5-300x214.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">UOVO Boutique Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 999,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> The Sher Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/uovo-boutique-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6479877",
+        "lon": "-79.391839",
+        "title": "Central Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"210\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/central-condos-210x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Central Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/central-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6386112",
+        "lon": "-79.4276199",
+        "title": "XO Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"282\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/12/XO-Condos-Exterior-Render-2-282x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"XO Condos - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">XO Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,072,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Liberty Village<br> <i class=\"fa fa-building\"></i> Lifetime Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/xo-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7103589",
+        "lon": "-79.392595",
+        "title": "Line 5 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/01/2019_01_07_12_24_09_18091_southtowerelevatedb01_st0.75_5k0010-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Line 5 Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 599,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Reserve Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/line-5-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7046439",
+        "lon": "-79.3975399",
+        "title": "Y&#038;S Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"227\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/02/YS-Condos-227x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Y&#038;S Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,182,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Tribute</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/y-s-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6424295",
+        "lon": "-79.4264664",
+        "title": "1181 Queen West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/02/1181-Queen-Street-West-Street-Level-View-Exterior-Render-1-300x169.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"1181 Queen Street West - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">1181 Queen West Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Skale Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/1181-queen-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6605426",
+        "lon": "-79.356259",
+        "title": "River and Fifth Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"296\" src=\"https://precondo.ca/wp-content/uploads/2019/02/River-and-Fifth-Street-Level-View-Rendering-300x296.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"River and Fifth - Street Level View - Rendering\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">River and Fifth Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto East<br> <i class=\"fa fa-building\"></i> Broccolini</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/river-and-fifth-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6487956",
+        "lon": "-79.4855082",
+        "title": "Bijou on Bloor Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"198\" src=\"https://precondo.ca/wp-content/uploads/2019/04/Bijou-on-Bloor-Condos-Birds-Eye-View-Exterior-Render-300x198.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bijou on Bloor Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bijou on Bloor Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,950,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bijou-on-bloor-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6801953",
+        "lon": "-79.4335646",
+        "title": "St. Clair Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"249\" src=\"https://precondo.ca/wp-content/uploads/2019/06/Screen-Shot-2019-06-17-at-5.41.04-PM-300x249.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">St. Clair Village Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 902,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Canderel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/st-clair-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6457912",
+        "lon": "-79.3925144",
+        "title": "357 King West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"145\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/07/357-King-Street-West-Exterior-Render-2-145x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"357 King Street West - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">357 King West Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 659,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/357-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6633936",
+        "lon": "-79.3283852",
+        "title": "The Poet Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/07/The-Poet-Condos-Birds-Eye-View-Exterior-Render-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Poet Condos - Birds Eye View Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Poet Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 959,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Fieldgate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-poet-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6688248",
+        "lon": "-79.3835558",
+        "title": "55C Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"588\" src=\"https://precondo.ca/wp-content/uploads/2019/08/55c-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">55C Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> MOD Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/55c-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6532926",
+        "lon": "-79.3661856",
+        "title": "East 55 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"195\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/East-55-Condos-195x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"East 55 Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">East 55 Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Lamb Development</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/East-55-Condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6706912",
+        "lon": "-79.4783546",
+        "title": "Stockyards District Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"188\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Stockyards-District-Residences-Street-Level-View-Exterior-Render-300x188.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Stockyards District Residences - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Stockyards District Residences</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Marlin Spring Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/stockyards-district-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6460745",
+        "lon": "-79.400506",
+        "title": "123 Portland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"233\" src=\"https://precondo.ca/wp-content/uploads/2019/08/123-Portland-Condos-Street-Level-View-Exterior-Render-300x233.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"123 Portland Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">123 Portland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 651,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/123-portland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6517418",
+        "lon": "-79.3750032",
+        "title": "The Saint Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/The-Saint-Condos-Street-Level-View-Exterior-Render-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Saint Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Saint Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,159,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-saint-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7398638",
+        "lon": "-79.4855234",
+        "title": "The Keeley Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"179\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Keeley-Condos-300x179.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Keeley Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Keeley Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 399,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> TAS Design Build</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-keeley-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6667299",
+        "lon": "-79.3452198",
+        "title": "Elevate at Logan",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"180\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Elevate-at-Logan-Birds-Eye-View-Exterior-Render-2-300x180.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Elevate at Logan - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Elevate at Logan</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Kaleido Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/elevate-at-logan/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6650311",
+        "lon": "-79.4597092",
+        "title": "The Junction House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"227\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Junction-House-Street-Level-View-Exterior-Render-300x227.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Junction House - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Junction House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,800+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Globizen</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-junction-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.685003",
+        "lon": "-79.2753517",
+        "title": "Terrasse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"286\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Terrasse-Condos-286x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Terrasse Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Terrasse Condos</h3><div class=\"price-num\">$ N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> The Beaches<br> <i class=\"fa fa-building\"></i> Sunrise Gate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/terrasse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.718674",
+        "lon": "-79.4005599",
+        "title": "The Winslow Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"205\" src=\"https://precondo.ca/wp-content/uploads/2019/11/The-Winslow-300x205.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Winslow Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,797,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Devron Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-winslow-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7321903",
+        "lon": "-79.3064268",
+        "title": "The Vic Towns",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"250\" src=\"https://precondo.ca/wp-content/uploads/2019/11/The-Vic-Towns-300x250.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Vic Towns\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Vic Towns</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,199,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Solotex Corporation and Fortress Real</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-vic-towns/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.671477",
+        "lon": "-79.3895077",
+        "title": "The Pemberton",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"330\" src=\"https://precondo.ca/wp-content/uploads/2019/12/The-PembertonMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Pemberton</h3><div class=\"price-num\"> <span class=\"price-num\">$ 950,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Pemberton Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-residences-of-33-yorkville/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.6806382",
+        "lon": "-79.4318388",
+        "title": "Eight Forty Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"241\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2017_07_25_11_07_50_worsely_urban_eight_forty_rendering-300x241.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Eight Forty Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Worsley Urban</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/eight-forty-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+=======
+        "lat": "43.7020897",
+        "lon": "-79.3613839",
+        "title": "Leaside Manor",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"206\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Leaside-Manors-300x206.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Leaside Manor</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,752,400+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Baghai Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/leaside-manor/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7135214",
+        "lon": "-79.3603722",
+        "title": "Upper East Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"234\" src=\"https://precondo.ca/wp-content/uploads/2019/10/Upper-East-Village-Condos-Street-Level-View-Exterior-Render-300x234.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Upper East Village Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Upper East Village Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Diamond Corp</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/upper-east-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6615804",
+        "lon": "-79.3767268",
+        "title": "JAC Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"285\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/10/308-Jarvis-Condos-Street-Level-View-Exterior-Render-4-285x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"308 Jarvis Condos - Street Level View - Exterior Render 4\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">JAC Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 639,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Graywood Developments Ltd. and Phantom Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/jac-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6676544",
+        "lon": "-79.4420834",
+        "title": "Galleria On the Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"211\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Galleria-on-the-Park-Birds-Eye-View-Exterior-Render-3-211x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Galleria on the Park - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Galleria On the Park Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 617,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Elad Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/galleria-mall-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6429251",
+        "lon": "-79.3741862",
+        "title": "Sky Tower at Pinnacle One Yonge Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"299\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2018/05/sky-tower-at-pinnacle-one-yonge-condos-6.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Sky Tower at Pinnacle One Yonge Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,269,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Pinnacle</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/prestige-condos-pinnacle-one-yonge/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.674712",
+        "lon": "-79.40931",
+        "title": "ANX Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"269\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/05/The-ANX-Condos-Birds-Eye-View-Exterior-Render-269x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The ANX Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">ANX Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,145,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/anx-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6737191",
+        "lon": "-79.4122389",
+        "title": "Bianca Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"166\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Bianca-Main-300x166.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bianca Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bianca Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bianca-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6467602",
+        "lon": "-79.3918082",
+        "title": "Plaza Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"359\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2017/07/plaza-theatre-district-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Theatre District Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6410858",
+        "lon": "-79.3928003",
+        "title": "Concord Canada House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"240\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Concord-Canada-House-main-300x240.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Concord Canada House main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Concord Canada House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 600,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/concord-canada-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7057521",
+        "lon": "-79.3962946",
+        "title": "Plaza Midtown Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"265\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Plaza-Midtown-Main-265x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Plaza Midtown Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Midtown Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 915,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-midtown-condos-1-and-2/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6702",
+        "lon": "-79.3865",
+        "title": "The One Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"229\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-One-Condos-Main-229x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The One Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The One Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> Mizrahi Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-one-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.725149641316",
+        "lon": "-79.417226314545",
+        "title": "Avenue &#038; Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_11_09_04_00_44_af_1580av_05_physcamera002-5000-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 11 09 04 00 44 af 1580av 05 physcamera002 5000\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Avenue &#038; Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Stafford Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/avenue-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645772017828",
+        "lon": "-79.391002261346",
+        "title": "Bungalow on Mercer Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"180\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/2016_07_28_10_38_24_24mercer_rendering3-180x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"2016 07 28 10 38 24 24mercer rendering3\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bungalow on Mercer Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Kalovida Canada</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bungalow-on-mercer-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645155851162",
+        "lon": "-79.36542284967",
+        "title": "Aquabella Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"225\" src=\"https://precondo.ca/wp-content/uploads/2017/07/building-design1-300x225.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"building design1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aquabella Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aquabella-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.667343069076",
+        "lon": "-79.345040544458",
+        "title": "The Lofthouse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"199\" src=\"https://precondo.ca/wp-content/uploads/2017/07/LofthouseRendering1-300x199.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"LofthouseRendering1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Lofthouse Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Grid Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-lofthouse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7097708",
+        "lon": "-79.395168",
+        "title": "65 Broadway Avenue Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"266\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/65-Broadway-Condos-Birds-Eye-View-Exterior-Render-266x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"65 Broadway Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">65 Broadway Avenue Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 865,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yonge &amp; Eglinton<br> <i class=\"fa fa-building\"></i> Times Group Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/65-broadway-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6423498",
+        "lon": "-79.3962044",
+        "title": "The Well Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"248\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Well-Condos-Main-300x248.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Well Condos Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Well Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-well-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6977172",
+        "lon": "-79.5121298",
+        "title": "The Humber Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"281\" src=\"https://precondo.ca/wp-content/uploads/2017/07/The-Humber-Condos-300x281.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Humber Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Humber Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 653,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Options for Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-humber-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+        "lat": "43.6437869",
+        "lon": "-79.4329254",
+        "title": "57 Brock Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"192\" src=\"https://precondo.ca/wp-content/uploads/2017/07/57-Brock-Condos-300x192.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">57 Brock Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,320,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Block Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/fifty-seven-brock-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.6798882",
+        "lon": "-79.4329297",
+        "title": "Monza Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"225\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Monza-Condos-Street-Level-View-Exterior-Render-300x225.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Monza Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Monza Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 925,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Benvenuto Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/monza-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.6552395",
+        "lon": "-79.3879075",
+        "title": "The United BLDG Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"411\" src=\"https://precondo.ca/wp-content/uploads/2017/07/main.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The United BLDG Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto<br> <i class=\"fa fa-building\"></i> Davpart</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/481-university-avenue-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6445053",
+        "lon": "-79.398598",
+        "title": "King Toronto Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"195\" src=\"https://precondo.ca/wp-content/uploads/2017/07/KING-Toronto-Exterior-Render-3-300x195.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"KING Toronto - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">King Toronto Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,200,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Westbank</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/489-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6752661",
+        "lon": "-79.4014092",
+        "title": "346 Davenport Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2017_01_31_09_05_47_freed_346_davenport_rendering-300x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">346 Davenport Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 2,329,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/346-davenport-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6790528",
+        "lon": "-79.3980633",
+        "title": "Davies Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"259\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2014_06_25_09_34_46_thedaviescondos_rendering-300x259.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Davies Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Brandy-Lane</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-davies-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7192817",
+        "lon": "-79.3487413",
+        "title": "Auberge 2 on the Park",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"267\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/04/2018_01_17_12_45_32_auberge2onthepark_rendering2-267x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Auberge 2 on the Park</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,150,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/auberge-2-park/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.645308",
+        "lon": "-79.3619955",
+        "title": "Aqualuna Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"201\" src=\"https://precondo.ca/wp-content/uploads/2018/05/condo-1-300x201.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Aqualuna Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Tridel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/aqualuna/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6710845",
+        "lon": "-79.3877873",
+        "title": "8 Cumberland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"160\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/8-cumberland-160x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">8 Cumberland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,249,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/8-cumberland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6474144",
+        "lon": "-79.3917184",
+        "title": "Encore Theatre District Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"184\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_08_28_08_50_06_theatre_district_rendering-184x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Encore Theatre District Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 975,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/encore-theatre-district-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6625007",
+        "lon": "-79.4697324",
+        "title": "260 High Park Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_03_13_11_19_45_260highpark_rendering3-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">260 High Park Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Medallion Capital Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/260-high-park-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7029672",
+        "lon": "-79.3979073",
+        "title": "UOVO Boutique Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"214\" src=\"https://precondo.ca/wp-content/uploads/2018/10/2018_01_24_09_41_13_uovoboutiqueresidences_rendering5-300x214.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">UOVO Boutique Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 999,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> The Sher Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/uovo-boutique-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6479877",
+        "lon": "-79.391839",
+        "title": "Central Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"210\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/central-condos-210x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Central Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/central-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6386112",
+        "lon": "-79.4276199",
+        "title": "XO Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"282\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/12/XO-Condos-Exterior-Render-2-282x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"XO Condos - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">XO Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,072,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Liberty Village<br> <i class=\"fa fa-building\"></i> Lifetime Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/xo-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.71165",
+        "lon": "-79.3948",
+        "title": "AKRA Living Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"449\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2020/11/AKRA-LivingMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">AKRA Living Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 674,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Curated Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/akra-living-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6447338",
+        "lon": "-79.367818",
+        "title": "Empire Quay House Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"399\" src=\"https://precondo.ca/wp-content/uploads/2019/02/empire-quay-house-condos-7.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Empire Quay House Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 749,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto Waterfront<br> <i class=\"fa fa-building\"></i> Empire Communities</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/162-queens-quay-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6733293",
+        "lon": "-79.4159156",
+        "title": "Oscar Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"206\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Oscar-ResidencesMain1Featured-300x206.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Oscar Residences</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Lifetime Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/500-dupont-street-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6546",
+        "lon": "-79.44596",
+        "title": "House Of Assembly Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2021/03/House-Of-Assembly-CondosMain1Featured-300x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"House-Of-Assembly-CondosMain1Featured\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">House Of Assembly Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 696,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Marlin Spring Development and Greybrook Realty Partners</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/house-of-assembly-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7202794",
+        "lon": "-79.340951",
+        "title": "Lily at Crosstown Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"317\" src=\"https://precondo.ca/wp-content/uploads/2023/10/Lily-Crosstown-Condos-Main.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Lily Crosstown Condos - Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Lily at Crosstown Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 577,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Don Mills and Eglinton<br> <i class=\"fa fa-building\"></i> Aspen Ridge</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/lily-at-crosstown-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.685003",
+        "lon": "-79.2753517",
+        "title": "Terrasse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"286\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Terrasse-Condos-286x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Terrasse Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Terrasse Condos</h3><div class=\"price-num\">$ N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> The Beaches<br> <i class=\"fa fa-building\"></i> Sunrise Gate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/terrasse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6479877",
+        "lon": "-79.391839",
+        "title": "Central Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"210\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/10/central-condos-210x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Central Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/central-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6457912",
+        "lon": "-79.3925144",
+        "title": "357 King West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"145\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/07/357-King-Street-West-Exterior-Render-2-145x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"357 King Street West - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">357 King West Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 659,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/357-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6842059",
+        "lon": "-79.3568252",
+        "title": "Angular Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"372\" src=\"https://precondo.ca/wp-content/uploads/2019/12/Angular-Condos_Main1Featured.webp\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Angular Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Daffodil Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/1001-broadview-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7137788",
+        "lon": "-79.3935776",
+        "title": "Keewatin Towns",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"168\" src=\"https://precondo.ca/wp-content/uploads/2020/02/Keewatin-Towns-300x168.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Keewatin Towns\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Keewatin Towns</h3><div class=\"price-num\"> <span class=\"price-num\">$ 2,099,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Freed Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/keewatin-towns/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.65561",
+        "lon": "-79.45741",
+        "title": "Westbend Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"400\" src=\"https://precondo.ca/wp-content/uploads/2021/12/Westbend-ResidencesMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Westbend Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 762,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Mattamy Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/westbend-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6386112",
+        "lon": "-79.4276199",
+        "title": "XO Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"282\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2018/12/XO-Condos-Exterior-Render-2-282x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"XO Condos - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">XO Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,072,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Liberty Village<br> <i class=\"fa fa-building\"></i> Lifetime Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/xo-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.65084",
+        "lon": "-79.36774",
+        "title": "The Whitfield Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2021/07/The-Whitfield-CondosMain1Featured-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Whitfield Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Menkes Developments Ltd. and Core Development Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-whitfield-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.65196",
+        "lon": "-79.37559",
+        "title": "Alias Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"501\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2021/07/Alias-CondosMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Alias Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 757,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Madison Group</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/alias-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.78584",
+        "lon": "-79.41711",
+        "title": "Plaza on Yonge Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"412\" src=\"https://precondo.ca/wp-content/uploads/2021/09/Plaza-on-Yonge-CondosMain1Featured-1.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza on Yonge Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 818,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-on-yonge-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.7103589",
+        "lon": "-79.392595",
+        "title": "Line 5 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/01/2019_01_07_12_24_09_18091_southtowerelevatedb01_st0.75_5k0010-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Line 5 Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 599,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Reserve Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/line-5-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7046439",
+        "lon": "-79.3975399",
+        "title": "Y&#038;S Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"227\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/02/YS-Condos-227x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Y&#038;S Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,182,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Tribute</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/y-s-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6424295",
+        "lon": "-79.4264664",
+        "title": "1181 Queen West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/02/1181-Queen-Street-West-Street-Level-View-Exterior-Render-1-300x169.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"1181 Queen Street West - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">1181 Queen West Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Skale Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/1181-queen-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6605426",
+        "lon": "-79.356259",
+        "title": "River and Fifth Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"296\" src=\"https://precondo.ca/wp-content/uploads/2019/02/River-and-Fifth-Street-Level-View-Rendering-300x296.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"River and Fifth - Street Level View - Rendering\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">River and Fifth Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Downtown Toronto East<br> <i class=\"fa fa-building\"></i> Broccolini</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/river-and-fifth-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6487956",
+        "lon": "-79.4855082",
+        "title": "Bijou on Bloor Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"198\" src=\"https://precondo.ca/wp-content/uploads/2019/04/Bijou-on-Bloor-Condos-Birds-Eye-View-Exterior-Render-300x198.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Bijou on Bloor Condos - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Bijou on Bloor Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,950,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/bijou-on-bloor-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6801953",
+        "lon": "-79.4335646",
+        "title": "St. Clair Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"249\" src=\"https://precondo.ca/wp-content/uploads/2019/06/Screen-Shot-2019-06-17-at-5.41.04-PM-300x249.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">St. Clair Village Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 902,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Canderel</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/st-clair-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6457912",
+        "lon": "-79.3925144",
+        "title": "357 King West Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"145\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/07/357-King-Street-West-Exterior-Render-2-145x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"357 King Street West - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">357 King West Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 659,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Great Gulf</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/357-king-west-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6633936",
+        "lon": "-79.3283852",
+        "title": "The Poet Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"169\" src=\"https://precondo.ca/wp-content/uploads/2019/07/The-Poet-Condos-Birds-Eye-View-Exterior-Render-300x169.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Poet Condos - Birds Eye View Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Poet Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 959,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Fieldgate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-poet-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6688248",
+        "lon": "-79.3835558",
+        "title": "55C Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"588\" src=\"https://precondo.ca/wp-content/uploads/2019/08/55c-condos.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">55C Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Yorkville<br> <i class=\"fa fa-building\"></i> MOD Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/55c-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6532926",
+        "lon": "-79.3661856",
+        "title": "East 55 Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"195\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/East-55-Condos-195x300.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"East 55 Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">East 55 Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Lamb Development</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/East-55-Condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6706912",
+        "lon": "-79.4783546",
+        "title": "Stockyards District Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"188\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Stockyards-District-Residences-Street-Level-View-Exterior-Render-300x188.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Stockyards District Residences - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Stockyards District Residences</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Marlin Spring Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/stockyards-district-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6460745",
+        "lon": "-79.400506",
+        "title": "123 Portland Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"233\" src=\"https://precondo.ca/wp-content/uploads/2019/08/123-Portland-Condos-Street-Level-View-Exterior-Render-300x233.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"123 Portland Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">123 Portland Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 651,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> King West<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/123-portland-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6517418",
+        "lon": "-79.3750032",
+        "title": "The Saint Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"225\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/08/The-Saint-Condos-Street-Level-View-Exterior-Render-225x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Saint Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Saint Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,159,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Minto</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-saint-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7398638",
+        "lon": "-79.4855234",
+        "title": "The Keeley Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"179\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Keeley-Condos-300x179.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Keeley Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Keeley Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 399,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> TAS Design Build</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-keeley-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6667299",
+        "lon": "-79.3452198",
+        "title": "Elevate at Logan",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"180\" src=\"https://precondo.ca/wp-content/uploads/2019/08/Elevate-at-Logan-Birds-Eye-View-Exterior-Render-2-300x180.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Elevate at Logan - Bird&#039;s Eye View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Elevate at Logan</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Kaleido Corporation</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/elevate-at-logan/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6650311",
+        "lon": "-79.4597092",
+        "title": "The Junction House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"227\" src=\"https://precondo.ca/wp-content/uploads/2019/09/The-Junction-House-Street-Level-View-Exterior-Render-300x227.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Junction House - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Junction House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 799,800+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> West Toronto<br> <i class=\"fa fa-building\"></i> Globizen</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-junction-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.685003",
+        "lon": "-79.2753517",
+        "title": "Terrasse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"286\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Terrasse-Condos-286x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Terrasse Condos\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Terrasse Condos</h3><div class=\"price-num\">$ N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> The Beaches<br> <i class=\"fa fa-building\"></i> Sunrise Gate Homes</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/terrasse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.67805",
+        "lon": "-79.30148",
+        "title": "The Cliffton",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"600\" src=\"https://precondo.ca/wp-content/uploads/2021/09/the-cliffton.png\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Cliffton</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Mutual Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/2450-kingston-rd-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.71352",
+        "lon": "-79.36039",
+        "title": "The Frederick Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"339\" src=\"https://precondo.ca/wp-content/uploads/2021/11/The-Frederick-CondosMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Frederick Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 659,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Camrost Felcorp and Diamond Corp</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-frederick-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6873179",
+        "lon": "-79.4135228",
+        "title": "South Forest Hill Residences",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"338\" src=\"https://precondo.ca/wp-content/uploads/2022/06/South-Forest-Hill-ResidencesMain1Featured.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">South Forest Hill Residences</h3><div class=\"price-num\"> <span class=\"price-num\">$ 770,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Parallax Investment Corporation and Westdale Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/south-forest-hill-residences/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.7321903",
+        "lon": "-79.3064268",
+        "title": "The Vic Towns",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"250\" src=\"https://precondo.ca/wp-content/uploads/2019/11/The-Vic-Towns-300x250.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"The Vic Towns\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Vic Towns</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,199,990+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Solotex Corporation and Fortress Real</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-vic-towns/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7606899",
+        "lon": "-79.41376",
+        "title": "North Core Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"395\" src=\"https://precondo.ca/wp-content/uploads/2022/09/NorthCore-CondosMain1Featured.webp\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">North Core Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 504,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Fieldgate Urban and Westdale Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/north-core-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+<<<<<<< HEAD
+        "lat": "43.6660798",
+        "lon": "-79.4992394",
+        "title": "The Towns of Lambton Mills",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"600\" height=\"460\" src=\"https://precondo.ca/wp-content/uploads/2023/03/Lambton-Mills-Front-Elevation.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Towns of Lambton Mills</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,195,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> TFC Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-towns-of-lambton-mills/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.6410858",
+        "lon": "-79.3928003",
+        "title": "Concord Canada House",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"240\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Concord-Canada-House-main-300x240.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Concord Canada House main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Concord Canada House</h3><div class=\"price-num\"> <span class=\"price-num\">$ 600,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Concord Adex</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/concord-canada-house/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7057521",
+        "lon": "-79.3962946",
+        "title": "Plaza Midtown Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"265\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Plaza-Midtown-Main-265x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Plaza Midtown Main\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Plaza Midtown Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 915,000+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Midtown<br> <i class=\"fa fa-building\"></i> Plaza</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/plaza-midtown-condos-1-and-2/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.667343069076",
+        "lon": "-79.345040544458",
+        "title": "The Lofthouse Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"199\" src=\"https://precondo.ca/wp-content/uploads/2017/07/LofthouseRendering1-300x199.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"LofthouseRendering1\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">The Lofthouse Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Leslieville &amp; Riverdale<br> <i class=\"fa fa-building\"></i> Grid Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/the-lofthouse-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7121503",
+        "lon": "-79.399721",
+        "title": "Capitol Theatre Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"200\" height=\"300\" src=\"https://precondo.ca/wp-content/uploads/2017/07/Capitol-Theatre-CondosMain1Featured-200x300.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Capitol Theatre Condos</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,359,900+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Madison Group and Westdale Properties</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/capitol-theatre-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+=======
+        "lat": "43.7020897",
+        "lon": "-79.3613839",
+        "title": "Leaside Manor",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"206\" src=\"https://precondo.ca/wp-content/uploads/2019/11/Leaside-Manors-300x206.jpeg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Leaside Manor</h3><div class=\"price-num\"> <span class=\"price-num\">$ 1,752,400+</span> </div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> Toronto<br> <i class=\"fa fa-building\"></i> Baghai Developments</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/leaside-manor/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+    },
+    {
+        "zoom": 12,
+        "lat": "43.7135214",
+        "lon": "-79.3603722",
+        "title": "Upper East Village Condos",
+        "html": "<div class=\"popup--c lv_listing-popup\"><img width=\"300\" height=\"234\" src=\"https://precondo.ca/wp-content/uploads/2019/10/Upper-East-Village-Condos-Street-Level-View-Exterior-Render-300x234.jpg\" class=\"attachment-medium size-medium wp-post-image\" alt=\"Upper East Village Condos - Street Level View - Exterior Render\" decoding=\"async\" loading=\"lazy\" /><div class=\"popup--description\"><h3 class=\"popup--head\">Upper East Village Condos</h3><div class=\"price-num\">N/A</div><div class=\"icon--list entry-meta\"><i class=\"fas fa-map-marker-alt\"></i> North York<br> <i class=\"fa fa-building\"></i> Diamond Corp</div><a target=\"_blank\" class=\"btn\" href=\"https://precondo.ca/upper-east-village-condos/\">VIEW FULL PRICE LIST + FLOOR PLANS</a></div></div>"
+>>>>>>> b32428505c920205876d0df0d95eea3b59463369
+    }
+]
