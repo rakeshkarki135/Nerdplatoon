@@ -398,17 +398,20 @@ cities =  {
 }   
 
 
-def dynamic_url_generator(cities : dict, url):
+def dynamic_url_generator(cities : dict):
      dynamic_headers_params = []
      for city,details in cities.items():
-          querystring["r"] = random.uniform(0.0, 0.99)
-          querystring["term"] = details.get('term')
-          headers["referer"] = details.get('referer')
+          querystring_copy = querystring.copy()
+          headers_copy = headers.copy()
+
+          querystring_copy["r"] = random.uniform(0.0, 0.99)
+          querystring_copy["term"] = details.get('term')
+          headers_copy["referer"] = details.get('referer')
                
           dynamic_headers_params.append({
                'city':city,
-               'querystring':querystring,
-               'headers':headers
+               'querystring':querystring_copy,
+               'headers':headers_copy,
           })
           
      return dynamic_headers_params
