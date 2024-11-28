@@ -23,7 +23,7 @@ def get_all_data():
           try:
                # Make the request with dynamic headers and query string
                response = requests.get(url, headers=dynamic_headers, params=dynamic_querystring)
-         
+               
                # Check response status
                if response.status_code != 200:
                     print(f"Error: Received status {response.status_code} for city {city_name}")
@@ -73,8 +73,6 @@ def urls_extractor(extracted_json):
           lon = item.get('lon', None)
           lons.append(lon)
 
-          
-
           if lat is None or lon is None:
                location_flag  = 0
                location_flags.append(location_flag)
@@ -92,10 +90,8 @@ def main():
      extracted_json = get_all_data()
      links, lats, lons, location_flags = urls_extractor(extracted_json)
      
-     df = pd.DataFrame(links,lats,lons,location_flags, columns = ['link','lat','lon','location_flag'])
-
+     df = pd.DataFrame({'link':links, 'lat':lats, 'lon':lons, 'location_flag':location_flags})
      df.drop_duplicates(subset="link", keep="first", inplace=True)
-     
      df.to_csv('api_urls.csv', index=False)
 
      print("All links Extracted.")

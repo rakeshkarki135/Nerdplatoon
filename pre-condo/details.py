@@ -86,8 +86,8 @@ def price_and_incentives(soup):
           if table_container:
                table = table_container.find('table', class_ = 'table')
                table_rows = table.find_all('tr')
-              # print(len(table_rows))
-                
+               # print(len(table_rows))
+               
                price_incentive = {}
                for row in table_rows:
                     columns = row.find_all('td')
@@ -107,7 +107,7 @@ def price_and_incentives(soup):
 def details(soup):
      try:
           details_container = soup.find('div', class_ = 'description__box')
-        
+          
           if details_container:
                # print(details_container)
                pass
