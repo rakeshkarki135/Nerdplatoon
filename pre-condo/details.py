@@ -1,6 +1,8 @@
 import re
+import uuid
 import requests
 import pandas as pd
+from datetime import datetime
 from bs4 import BeautifulSoup
 
 
@@ -146,83 +148,89 @@ def Overview(soup):
                data_element = box.find('span')
                
                if data_element:
-                    values = data_element.text.split()
-
+                    values = data_element.text.replace(':','').replace(',', '').split()
+                    
                     if len(values) >= 2:
-                         key = values[0].lower().replace(':','')
-                         value = values[1].replace(',','')
-                    
-                         overview_obj[key] = value
-                    
+                         key = ''.join(values[0].lower())
+                         value = ' '.join(values[1:])
+                         overview_obj[key] = None if value == "N/A" else value
+               
           # print(overview_obj)
           return overview_obj
           
      except Exception as e:
           print(f"Error whle getting overview details : {e}")
      
-     
 def price_and_incentives(soup):
-     try:
-          table_container = soup.find('div', class_='pricing-fees')
-          if not table_container:
-               return {}
+    try:
+        table_container = soup.find('div', class_='pricing-fees')
+        if not table_container:
+            return {}
 
-          table = table_container.find('table', class_='table')
-          if not table:
-               return {}
+        table = table_container.find('table', class_='table')
+        if not table:
+            return {}
 
-          table_rows = table.find_all('tr')
-          if not table_rows:
-               return {}
+        table_rows = table.find_all('tr')
+        if not table_rows:
+            return {}
 
-          price_incentive = {}
+        price_incentive = {}
 
-          # Keys that need price/unit splitting
-          price_keys = [
-               '1_bed_starting_from', '2_bed_starting_from', 'price_per_sqft',
-               'avg_price_per_sqft', 'city_avg_price_per_sqft', 'parking_cost', 'parking_maintenance','storage_cost'
-          ]
+        # Keys that need price/unit splitting
+        price_keys = [
+            '1_bed_starting_from', '2_bed_starting_from', 'price_per_sqft',
+            'avg_price_per_sqft', 'city_avg_price_per_sqft', 'parking_cost', 
+            'parking_maintenance', 'storage_cost'
+        ]
 
-          # Keys to directly add
-          direct_keys = ['development_levies', 'incentives', 'deposit_structure', 'price_range']
+        # Keys to directly add
+        direct_keys = ['development_levies', 'incentives', 'deposit_structure', 'price_range']
 
-          for row in table_rows:
-               columns = row.find_all('td')
-               if len(columns) > 1:  # Ensure at least two columns exist
-                    key = '_'.join(columns[0].text.lower().strip().split())
-                    value = columns[1].text.strip().replace(',','')
-
+        for row in table_rows:
+            columns = row.find_all('td')
+            if len(columns) > 1:  # Ensure at least two columns exist
+                key = '_'.join(columns[0].text.lower().strip().split())
+                value = columns[1].text.strip().replace(',', '')
+                value = None if value == 'Register Now' or value == 'N/A' else value
+               
+                if value is not None:
                     # Check for keys requiring price and unit splitting
                     if key in price_keys:
-                         split_value = value.split()
-                         if len(split_value) > 1:  # Ensure split is valid
-                              price = split_value[1]
-                              unit = "".join(split_value[:1])
-                              price_incentive[key] = price
-                              price_incentive[f"{key}_unit"] = unit
-                              
-                         elif key == "2_bed_starting_from":
-                              value = value.split('$')
-                              if len(value) > 1:
-                                   price_incentive[key] = value[1]
-                                   price_incentive[key + '_unit'] = '$'
+                         if key in ['1_bed_starting_from', '2_bed_starting_from']:
+                         # Split on '$' to extract the price
+                              sp_value = value.split('$')
+                              if len(sp_value) > 1:
+                                   price_incentive[key] = sp_value[1].replace("'","").replace("s","")
+                                   price_incentive[f"{key}_unit"] = '$'
+                              else:
+                                   price_incentive[key] = value  # Fallback if '$' is missing
                          else:
-                              price_incentive[key] = value  # Fallback if split fails
+                              split_value = value.split()
+                              if len(split_value) > 1:  # Ensure split is valid
+                                   price = split_value[1]
+                                   unit = split_value[0]
+                                   price_incentive[key] = price
+                                   price_incentive[f"{key}_unit"] = unit
+                              else:
+                                   price_incentive[key] = value  # Fallback if split fails
 
                     # Direct addition for specific keys
                     elif key in direct_keys:
                          price_incentive[key] = value
 
-                    # Default case
+                    # Default case for other keys
                     else:
                          price_incentive[key] = value
+                else:
+                     price_incentive[key] = None
+                 
 
-          return price_incentive
+        return price_incentive
 
-     except Exception as e:
-          print(f"Error while getting the prices and incentives: {e}")
-          return {}
-
+    except Exception as e:
+        print(f"Error while getting the prices and incentives: {e}")
+        return {}
 
      
 def floor_plan(soup):
@@ -311,8 +319,7 @@ def floor_plan(soup):
           
      except Exception as e:
           print(f"Error while getting the floor plans : {e}")
-     
-
+         
      
 def functions_handler(soup, *functions):
      results = []
@@ -323,7 +330,7 @@ def functions_handler(soup, *functions):
 
 
 def url_handler(df):
-     urls = df['link'].head(30)
+     urls = df['link'].tolist()
      # urls = ['https://precondo.ca/high-line-condos/?authenticated=96721']
 
      data = []
@@ -353,7 +360,10 @@ def url_handler(df):
                'details' : description or None,
                'amenities' : amenities,
                **floor_pln,
-               'last_updated' : last_update or None
+               'last_updated' : last_update or None,
+               'created_at' : datetime.now().strftime("%y-%m-%d %H:%M:%S"),
+               'updated_at' : None,
+               'deleted_at' : None
           
           }
           

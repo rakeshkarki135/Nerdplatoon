@@ -8,6 +8,7 @@ db_password = config("SERVER_DB_PASSWORD", cast=str)
 db_host = config("SERVER_DB_HOST", cast=str)
 db_port = config("SERVER_DB_PORT", cast=int)
 
+table_name = "precondo"
 
 def database_connector(
         name : str = db_name,
@@ -20,20 +21,20 @@ def database_connector(
     try:
         print("Database-Name : ", name)
         db_connection = connector.connect(
-            name = name,
             user = user,
             password = password,
             host = host,
             port = port,
+            database = name,
             autocommit = autocommit,
-            plugin = "mysql-auth-plugin"
+            auth_plugin = "mysql-native-password"
 
         )
-
+        db_connection.autocommit = autocommit
         cursor = db_connection.cursor(dictionary=True)
-        connection = db_connection.connect()
 
-        return cursor, connection
+        return cursor, db_connection
+    
     except Exception as e:
         print(f"Error occured while connecting to database : {e}")
 
