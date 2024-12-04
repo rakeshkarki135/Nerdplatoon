@@ -1,17 +1,30 @@
 import re
+import uuid
 import pandas as pd
 import numpy as np
 from datetime import datetime
 from base.db_connection import database_connector
 
 
+
+
+def unique_uuid_generator(df):
+    existing_uuid = set(df['uuid'])
+    while True:
+        new_uuid = str(uuid.uuid4())
+        if new_uuid not in df['uuid']:
+            return new_uuid
+    
+
 def data_cleaning(df):
     df.dropna(subset=['title','img_src'], inplace=True)
     df['occupancy'] = df['occupancy'].str.replace(r'[a-zA-Z]','', regex=True)
     df['created_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
+    df['uuid'] = [str(uuid.uuid4()) for _ in range(len(df))]
     df = df.replace({pd.NA : None, np.nan : None})
-    df.rename(columns={"1_bed_starting_from":"one_bed_starting_from", "2_bed_starting_from":"two_bed_starting_from","url":"link","1_bed_starting_from_unit":"one_bed_starting_from_unit","2_bed_starting_from_unit":"two_bed_starting_from_unit"}, inplace=True)
-
+    df.rename(columns={"url":"link","parking_costs":"parking_cost","parking_costs_unit":"parking_cost_unit","parkin_maintenance":"parking_maintenance"}, inplace=True)
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+    
     return df
 
     
