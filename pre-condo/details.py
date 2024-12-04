@@ -385,12 +385,14 @@ def floor_plan(soup):
      except Exception as e:
           print(f"Error while getting the floor plans : {e}")
      
+
 def functions_handler(soup, *functions):
      results = []
      for func in functions:
           results.append(func(soup))
      
      return results
+
 
 def url_handler():
      urls_df = pd.read_csv('api_urls.csv')
@@ -431,7 +433,12 @@ def url_handler():
 
           data.append(row)
 
-     return pd.DataFrame(data)
+     df = pd.DataFrame(data)
+
+     df.dropna(subset=['title','img_src'], inplace=True)
+     df['occupancy'] = df['occupancy'].str.replace(r'[a-zA-Z]','', regex=True)
+
+     return df
 
           
           

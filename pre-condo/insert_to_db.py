@@ -17,7 +17,7 @@ def unique_uuid_generator(df):
     
 
 def data_cleaning(df):
-    df.dropna(subset=['title','img_src'], inplace=True)
+    # df.dropna(subset=['title','img_src'], inplace=True)
     df['occupancy'] = df['occupancy'].str.replace(r'[a-zA-Z]','', regex=True)
     df['created_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
     df['uuid'] = [str(uuid.uuid4()) for _ in range(len(df))]
