@@ -1,5 +1,7 @@
 import pandas as pd
 import requests 
+import re
+import json
 
 from decouple import config
 from sqlalchemy import create_engine
@@ -7,7 +9,7 @@ from datetime import datetime
 from deepdiff import DeepDiff
 from typing import Union, Tuple
 
-from details import url_handler
+from details import main_scraper
 from base.db_connection import database_connector
 
 
@@ -43,67 +45,66 @@ def connect_database_with_sql_alchemy():
 
 
 def get_database_data(engine):
-     sql_query = "SELECT  link, img_src, price, price_range, occupancy, suites, storeys, developer, one_bed_starting_from, two_bed_starting_from, price_per_sqft, avg_price_per_sqft, city_avg_price_per_sqft, development_levies, parking_cost, parking_maintenance, assignment_fee_free, storage_cost, deposit_structure, details, amenities, last_updated, created_at, updated_at, deleted_at, floor_plan, incentives FROM precondo WHERE deleted_at is NULL"
+     sql_query = "SELECT  id, link, img_src, price, price_range, occupancy, suites, storeys, developer, one_bed_starting_from, two_bed_starting_from, price_per_sqft, avg_price_per_sqft, city_avg_price_per_sqft, development_levies, parking_cost, parking_maintenance, assignment_fee_free, storage_cost, deposit_structure, details, amenities, last_updated, created_at, updated_at, deleted_at, floor_plan, incentives FROM precondo WHERE deleted_at is NULL"
      
      df = pd.read_sql(sql_query, con=engine)
      return df
 
 
-def fetch_link(link : str) -> dict:
-     response = requests.request("GET", link, params=QUERYSTRING, data=PAYLOAD, headers=HEADERS)
+def fetch_link(i, link : str) -> dict:
+     # response = requests.request("GET", link, params=QUERYSTRING, data=PAYLOAD, headers=HEADERS)
+     response = requests.get(link)
      
      if response.status_code == 200 and response.content.strip():
           try:
-               result_df = url_handler()
-               
-               def get_value(col):
-                    return result_df[col].iloc[0] if (col in result_df.columns and pd.notna(result_df[col].iloc[0])) else None
-               
-               img_src = get_value('img_src')
-               price = get_value('price')
-               price_range = get_value('price_range')
-               occupancy = get_value('occupancy')
-               suites = get_value('suites')
-               storeys =  get_value('storeys')
-               developer = get_value('developer')
-               one_bed_starting_from = get_value('one_bed_starting_from')
-               two_bed_starting_from = get_value('two_bed_starting_from')
-               price_per_sqft = get_value('price_per_sqft')
-               avg_price_per_sqft = get_value('avg_price_per_sqft')
-               city_avg_price_per_sqft = get_value('city_avg_price_per_sqft')
-               development_levies = get_value('development_levies')
-               parking_cost = get_value('parking_cost')
-               parking_maintenance = get_value('parking_maintenance')
-               assignment_fee_free = get_value('assignment_fee_free')
-               storage_cost = get_value('storage_cost')
-               deposit_structure = get_value('deposit_structure')
-               details = get_value('details')
-               amenities = get_value('amenities')
-               last_updated = get_value('last_updated')
-               floor_plan = get_value('floor_plan')
-               incentives = get_value('incentives')
+               result_obj = main_scraper(i, link)
+
+               img_src = result_obj.get('img_src',[])
+               price = result_obj.get('price')
+               price_range = result_obj.get('price_range')
+               occupancy = result_obj.get('occupancy')
+               occupancy = re.sub(r'[a-zA-Z]','', occupancy)
+               suites = result_obj.get('suites')
+               storeys =  result_obj.get('storeys')
+               developer = result_obj.get('developer')
+               one_bed_starting_from = result_obj.get('one_bed_starting_from')
+               two_bed_starting_from = result_obj.get('two_bed_starting_from')
+               price_per_sqft = result_obj.get('price_per_sqft')
+               avg_price_per_sqft = result_obj.get('avg_price_per_sqft')
+               city_avg_price_per_sqft = result_obj.get('city_avg_price_per_sqft')
+               development_levies = result_obj.get('development_levies')
+               parking_cost = result_obj.get('parking_cost')
+               parking_maintenance = result_obj.get('parking_maintenance')
+               assignment_fee_free = result_obj.get('assignment_fee_free')
+               storage_cost = result_obj.get('storage_cost')
+               deposit_structure = result_obj.get('deposit_structure')
+               details = result_obj.get('details')
+               amenities = result_obj.get('amenities',[])
+               last_updated = result_obj.get('last_updated')
+               floor_plan = result_obj.get('floor_plan',{})
+               incentives = result_obj.get('incentives')
                
                status_404 = 0
                
           except Exception as e:
-               print("Error while getting scraping data in link --> {link} : {e}")
-               img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = 1
+               print(f"Error while scraping data from link in fetch_url --> {link} : {e}")
+               img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = None
                
                status_404 = 1
                
      elif response.status_code == "205":
-          img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = 1
+          img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = None
                
           status_404 = 1
      
      else:
-          img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = 1
+          img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = None
                
           status_404 = 0
           
      return {
           'link' : link,
-          'img_src' : img_src,
+          'img_src' : img_src if img_src else [],
           'price' : price,
           'price_range' : price_range,
           'occupancy' : occupancy,
@@ -122,9 +123,9 @@ def fetch_link(link : str) -> dict:
           'storage_cost' : storage_cost,
           'deposit_structure' : deposit_structure,
           'details' : details,
-          'amenities' : amenities,
+          'amenities' : amenities if amenities else [],
           'last_updated' : last_updated,
-          'floor_plan' : floor_plan,
+          'floor_plan' : floor_plan or {},
           'incentives' : incentives,
           'status_404' : status_404
           
@@ -146,11 +147,13 @@ def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Uni
      IMAGES_CHANGED = False
      changed_extracted_data = {}
 
-     db_row = [db_data["link"] == scraped_data["link"]]
+     db_row = db_data[db_data["link"] == scraped_data["link"]]
 
      if not db_row.empty:
           changed_row = {}
           db_row = db_row.iloc[0]
+          da = db_row.to_json()
+          print(da)
 
           for  key, scraped_value in scraped_data.items():
                if key in db_row.index:
@@ -159,26 +162,29 @@ def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Uni
                     db_value = None if db_value == '' else db_value
 
                     # for lists
-                    if key in ['img_src']:
-                         # db_value_list = db_value.split(",") if db_value else []
-                         # scraped_value_list = scraped_value.split(",") if scraped_value else []
-                        
-                         if len(db_value) != len(scraped_value):
-                             IMAGES_CHANGED = True
-                             changed_row[key] = scraped_value      
+                    if key == 'img_src':
+                         db_value_list = db_value or []
+                         scraped_value_list = scraped_value or []
+                         
+                         if len(db_value_list) != len(scraped_value_list):
+                              IMAGES_CHANGED = True
+                              changed_row[key] = scraped_value      
 
                     elif key == "amenities":
-                         if len(db_value) != len(scraped_value):
+                         db_value_list = db_value or []
+                         scraped_value_list = scraped_value or []
+                         
+                         if len(db_value_list) != len(scraped_value_list):
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
                     # for interger or float value
                     elif key in ['price','occupancy','suites','storeys','one_bed_starting_from','one_bed_starting_from',
-                                 'price_per_sqft','avg_price_per_sqft','city_avg_price_per_sqft','parking_cost','parkin_maintenance','storage_cost']:
+                                   'price_per_sqft','avg_price_per_sqft','city_avg_price_per_sqft','parking_cost','parkin_maintenance','storage_cost']:
 
                          if db_value is not None and scraped_value is not None:
                               try:
-                                   if float(len(db_value)) != float(len(scraped_value)):
+                                   if float(db_value) != float(scraped_value):
                                         VALUE_CHANGED = True
                                         changed_row[key] = scraped_value
                          
@@ -204,7 +210,7 @@ def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Uni
                               changed_row[key] = scraped_value
 
           if VALUE_CHANGED or IMAGES_CHANGED:
-               changed_row['id'] = db_row['id'].iloc[0]
+               changed_row['id'] = db_row['id']
                changed_row['link'] = scraped_data['link']
                changed_row['updated_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
                changed_extracted_data.update(changed_row)
@@ -215,16 +221,16 @@ def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Uni
           changed_extracted_data.update(scraped_data)
 
 
-     if IMAGES_CHANGED or VALUE_CHANGED:
-          return IMAGES_CHANGED, changed_extracted_data
+     if  VALUE_CHANGED or IMAGES_CHANGED :
+          return changed_extracted_data , IMAGES_CHANGED
      else:
-          return IMAGES_CHANGED, None
+          return None , IMAGES_CHANGED
      
 
 def update_data(changed_data : dict) -> None:
      cursor, db_connection = database_connector(autocommit=False)
      update_fields = [f'{key} = %s' for key in changed_data.keys() if key not in ['id','link']]
-     update_query = f"UPDATE {DB_TABLE_NAME} SET ({','.join(update_fields)}) WHERE link = %s"
+     update_query = f"UPDATE {DB_TABLE_NAME} SET {','.join(update_fields)} WHERE link = %s"
      update_values = [str(changed_data[key]) for key,value in changed_data.items() if key not in ['id','link']]
      update_values.append(changed_data['link'])
 
@@ -238,40 +244,41 @@ def update_data(changed_data : dict) -> None:
           print(f"Error while updating the data in Database for link ---> {changed_data['link']}: {e}")
 
 
-def url_handler(i, link, db_data):
+def link_runner(i, link, db_data):
      try:
-          print(i, link)
-                    
-          result = fetch_link(link)
+          print(i, link)       
+          result = fetch_link(i, link)
+          print(result)
           
-          if result['status_404']:
+          if result['status_404'] == 1:
                deleted_not_found_item(result)
           else:
                changed_data, IMAGES_CHANGED = validation_with_db(db_data, result)
-
+               
                if changed_data is not None and isinstance(changed_data, dict):
                     update_data(changed_data)
                else:
-                    print("<--- No Change ---> on link <--- {link} --->")
+                    print(f"<--- No Change ---> on link <--- {link} --->")
 
      except Exception as e:
-          print(f"Error occured while gettng data from link ----> {link}  : {e}")
+          print(f"Error occured while gettng data in link_runner from link ----> {link}  : {e}")
 
 
 def main():
      engine = connect_database_with_sql_alchemy()
      db_data = get_database_data(engine)
 
-     print(db_data)
+     # print(db_data)
      
      links = db_data['link'].tolist()
      
      if len(links) > 0:
           for i,link in enumerate(links):
-               url_handler(i, link, db_data)
+               link_runner(i, link, db_data)
+               break
                
      
-     print("All the data updated Successfully")
+     print("Successfully updated All the Data")
 
 
 

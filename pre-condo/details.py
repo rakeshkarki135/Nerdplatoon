@@ -393,20 +393,9 @@ def functions_handler(soup, *functions):
      
      return results
 
-
-def url_handler():
-     urls_df = pd.read_csv('api_urls.csv')
-     urls = urls_df['link'].tolist()
-     # urls = urls_df['link'].head(30)
-     data = []
-
-     for i, url in enumerate(urls):
-          print(i + 1, url)
+def main_scraper(i, url):
+     try:
           soup = soup_creator(url)
-
-          if not soup:
-               print(f"Failed to fetch data for {url}")
-               continue
 
           # Initialize data from functions
           img_src, title_location, overview, price_and_incentive, description, amenities, floor_pln, last_update = \
@@ -415,15 +404,15 @@ def url_handler():
           # Handle None values and flatten data
           row = {
                'url': url,
-               'img_src': img_src if img_src else None,
+               'img_src': img_src if img_src else [],
                'title': title_location[0] if title_location else None,
                'location': title_location[1] if title_location else None,
                'price': title_location[2] if (title_location and len(title_location[2].split()) == 1) else None,
                'price_range': title_location[2] if (title_location and len(title_location[2].split()) > 1) else None,
                **(overview if overview else {}),  # Include all expected keys
-               **(price_and_incentive if price_and_incentive else {}), 
+               **(price_and_incentive if price_and_incentive else {}),
                'details': description,
-               'amenities': amenities if amenities else None,
+               'amenities': amenities if amenities else [],
                **(floor_pln if floor_pln else {}),  # Standardize keys
                'last_updated': last_update,
                'created_at': datetime.now().strftime("%y-%m-%d %H:%M:%S"),
@@ -431,24 +420,33 @@ def url_handler():
                'deleted_at': None
           }
 
+          return row
+
+     except Exception as e:
+          print(f"Error occurred while getting details in main_scraper: {e}")
+          return {}
+
+          
+def url_extractor():
+     urls_df = pd.read_csv('api_urls.csv')
+     urls = urls_df['link'].tolist()
+     data = []
+     
+     for i,url in enumerate(urls):
+          print(i + 1, url)
+          row = main_scraper(i, url)
           data.append(row)
-
+          
      df = pd.DataFrame(data)
-
-     df.dropna(subset=['title','img_src'], inplace=True)
-     df['occupancy'] = df['occupancy'].str.replace(r'[a-zA-Z]','', regex=True)
-
      return df
-
-          
-          
      
 def main():
-     df = url_handler()
-     
+     df = url_extractor()
+     df['occupancy'] = df['occupancy'].str.replace(r'[a-zA-Z]','', regex=True)
      df.to_csv('details.csv', index=False)
      
      print("Scraping completed")
+     
      
 if __name__ == '__main__':
      main()
