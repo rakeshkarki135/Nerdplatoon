@@ -45,7 +45,7 @@ def connect_database_with_sql_alchemy():
 
 
 def get_database_data(engine):
-     sql_query = "SELECT  id, link, img_src, price, price_range, occupancy, suites, storeys, developer, one_bed_starting_from, two_bed_starting_from, price_per_sqft, avg_price_per_sqft, city_avg_price_per_sqft, development_levies, parking_cost, parking_maintenance, assignment_fee_free, storage_cost, deposit_structure, details, amenities, last_updated, created_at, updated_at, deleted_at, floor_plan, incentives FROM precondo WHERE deleted_at is NULL"
+     sql_query = "SELECT  id, link, img_src, price, price_range, occupancy, suites, storeys, developer, one_bed_starting_from, two_bed_starting_from, price_per_sqft, avg_price_per_sqft, city_avg_price_per_sqft, development_levies, parking_cost, parking_maintenance, assignment_fee_free, storage_cost, deposit_structure, details, amenities, last_updated, created_at, updated_at, floor_plan, incentives FROM precondo WHERE deleted_at is NULL"
      
      df = pd.read_sql(sql_query, con=engine)
      return df
@@ -141,8 +141,7 @@ def deleted_not_found_item(result : dict) -> None:
      db_connection.commit()
      print(f"Successfully deleted the data of link : {result['link']}")
      
-     
-def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Union[dict , None], bool]:
+def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union[dict, None], bool]:
      VALUE_CHANGED = False
      IMAGES_CHANGED = False
      changed_extracted_data = {}
@@ -151,104 +150,122 @@ def validation_with_db(db_data : pd.DataFrame, scraped_data : dict) -> Tuple[Uni
 
      if not db_row.empty:
           changed_row = {}
-          db_row = db_row.iloc[0]
-          da = db_row.to_json()
-          print(da)
-
-          for  key, scraped_value in scraped_data.items():
+          
+          for key, scraped_value in scraped_data.items():
                if key in db_row.index:
-                    db_value = db_row[key]
+                    db_value = db_row[key].iloc[0]
+                    db_value = None if db_value == '' or db_value  == 'nan' else db_value
 
-                    db_value = None if db_value == '' else db_value
+                    scraped_value = None if scraped_value == '' else scraped_value
 
-                    # for lists
+                    # Handle lists
                     if key == 'img_src':
                          db_value_list = db_value or []
                          scraped_value_list = scraped_value or []
-                         
+
                          if len(db_value_list) != len(scraped_value_list):
+                              print(f"{key} -- {db_value} changed_to {scraped_value}")
                               IMAGES_CHANGED = True
-                              changed_row[key] = scraped_value      
+                              changed_row[key] = scraped_value
 
                     elif key == "amenities":
                          db_value_list = db_value or []
                          scraped_value_list = scraped_value or []
-                         
+
                          if len(db_value_list) != len(scraped_value_list):
+                              print(f"{key} -- {db_value} changed_to {scraped_value}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
-                    # for interger or float value
-                    elif key in ['price','occupancy','suites','storeys','one_bed_starting_from','one_bed_starting_from',
-                                   'price_per_sqft','avg_price_per_sqft','city_avg_price_per_sqft','parking_cost','parkin_maintenance','storage_cost']:
-
+                    # Handle numbers
+                    elif key in [
+                         'price', 'occupancy', 'suites', 'storeys', 'one_bed_starting_from',
+                         'price_per_sqft', 'avg_price_per_sqft', 'city_avg_price_per_sqft',
+                         'parking_cost', 'parkin_maintenance', 'storage_cost'
+                    ]:
                          if db_value is not None and scraped_value is not None:
                               try:
                                    if float(db_value) != float(scraped_value):
+                                        print(f"{key} -- {db_value} changed_to {scraped_value}")
                                         VALUE_CHANGED = True
                                         changed_row[key] = scraped_value
-                         
                               except ValueError:
                                    if str(db_value) != str(scraped_value):
+                                        print(f"{key} -- {db_value} changed_to {scraped_value}")
                                         VALUE_CHANGED = True
                                         changed_row[key] = scraped_value
                          else:
                               changed_row[key] = scraped_value
 
-                    # for dictionaries
+                    # Handle dictionaries
                     elif key == "floor_plan":
                          diff = DeepDiff(db_value, scraped_value, ignore_order=True).to_dict()
                          if diff:
+                              print(f"{key} -- {db_value} changed_to {scraped_value}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
-                    
 
-                    # maily for strings
+                    # Handle strings
                     else:
                          if str(db_value) != str(scraped_value):
+                              print(f"{key} -- {db_value} changed_to {scraped_value}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
           if VALUE_CHANGED or IMAGES_CHANGED:
                changed_row['id'] = db_row['id']
                changed_row['link'] = scraped_data['link']
-               changed_row['updated_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
+               changed_row['updated_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                changed_extracted_data.update(changed_row)
 
      else:
-          print(f"Link not found in database : {scraped_data['link']}")    
+          print(f"Link not found in database: {scraped_data['link']}")
           VALUE_CHANGED = True
           changed_extracted_data.update(scraped_data)
 
-
-     if  VALUE_CHANGED or IMAGES_CHANGED :
-          return changed_extracted_data , IMAGES_CHANGED
+     if VALUE_CHANGED or IMAGES_CHANGED:
+          return changed_extracted_data, IMAGES_CHANGED
      else:
-          return None , IMAGES_CHANGED
-     
+          return None, IMAGES_CHANGED
 
-def update_data(changed_data : dict) -> None:
-     cursor, db_connection = database_connector(autocommit=False)
-     update_fields = [f'{key} = %s' for key in changed_data.keys() if key not in ['id','link']]
-     update_query = f"UPDATE {DB_TABLE_NAME} SET {','.join(update_fields)} WHERE link = %s"
-     update_values = [str(changed_data[key]) for key,value in changed_data.items() if key not in ['id','link']]
-     update_values.append(changed_data['link'])
 
-     try:
-          cursor.execute(update_query, tuple(update_values))
-          db_connection.commit()
-          print(f"Successfully updated data for the link : {changed_data['link']}")
+def update_data(changed_data: dict) -> None:
+    import math
 
-     except Exception as e:
-          db_connection.rollback()
-          print(f"Error while updating the data in Database for link ---> {changed_data['link']}: {e}")
+    if not changed_data:
+        print("No data to update.")
+        return
+
+    # Replace blank and NaN values with None
+    preprocessed_data = {
+        key: None if value in ["", None] or (isinstance(value, float) and math.isnan(value)) else value
+        for key, value in changed_data.items()
+    }
+
+    cursor, db_connection = database_connector(autocommit=False)
+    update_fields = [f'{key} = %s' for key in preprocessed_data.keys() if key not in ['id', 'link']]
+    update_query = f"UPDATE {DB_TABLE_NAME} SET {','.join(update_fields)} WHERE link = %s"
+    update_values = [
+        preprocessed_data[key] if preprocessed_data[key] is not None else None
+        for key in preprocessed_data
+        if key not in ['id', 'link']
+    ]
+    update_values.append(preprocessed_data['link'])
+
+    try:
+        cursor.execute(update_query, tuple(update_values))
+        db_connection.commit()
+        print(f"Successfully updated data for the link: {preprocessed_data['link']}")
+    except Exception as e:
+        db_connection.rollback()
+        print(f"Error while updating the data in Database for link ---> {preprocessed_data['link']}: {e}")
 
 
 def link_runner(i, link, db_data):
      try:
           print(i, link)       
           result = fetch_link(i, link)
-          print(result)
+          # print(result)
           
           if result['status_404'] == 1:
                deleted_not_found_item(result)
@@ -275,8 +292,6 @@ def main():
      if len(links) > 0:
           for i,link in enumerate(links):
                link_runner(i, link, db_data)
-               break
-               
      
      print("Successfully updated All the Data")
 
