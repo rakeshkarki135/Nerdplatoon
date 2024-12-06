@@ -141,6 +141,7 @@ def deleted_not_found_item(result : dict) -> None:
      db_connection.commit()
      print(f"Successfully deleted the data of link : {result['link']}")
      
+     
 def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union[dict, None], bool]:
      VALUE_CHANGED = False
      IMAGES_CHANGED = False
@@ -152,36 +153,51 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
           changed_row = {}
           
           for key, scraped_value in scraped_data.items():
-               if key in db_row.index:
+               if key in db_row.columns:
                     db_value = db_row[key].iloc[0]
-                    db_value = None if db_value == '' or db_value  == 'nan' else db_value
+                    db_value = None if db_value in [None, '', 'nan','null'] else db_value
+                    # scraped_value = None if scraped_value == ' ' else scraped_value
 
-                    scraped_value = None if scraped_value == '' else scraped_value
-
+                    # print(f"Processing key: {key}, db_value: {db_value}, scraped_value: {scraped_value}")
+                    
                     # Handle lists
                     if key == 'img_src':
-                         db_value_list = db_value or []
-                         scraped_value_list = scraped_value or []
+                         
+                         if isinstance(db_value, str):
+                              try:
+                                   db_value_list = json.loads(db_value)
+                              except json.JSONDecodeError:
+                                   db_value_list = []  # If it's not a valid JSON, assume it's an empty list
+                         else:
+                              db_value_list = db_value if isinstance(db_value, list) else []
+                              
+                         scraped_value_list = scraped_value if isinstance(scraped_value, list) else []
 
                          if len(db_value_list) != len(scraped_value_list):
-                              print(f"{key} -- {db_value} changed_to {scraped_value}")
+                              print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
                               IMAGES_CHANGED = True
                               changed_row[key] = scraped_value
 
                     elif key == "amenities":
-                         db_value_list = db_value or []
-                         scraped_value_list = scraped_value or []
+                         if isinstance(db_value, str):
+                              try:
+                                   db_value_list = json.loads(db_value)
+                              except json.JSONDecodeError:
+                                   db_value_list = []  # If it's not a valid JSON, assume it's an empty list
+                         else:
+                              db_value_list = db_value if isinstance(db_value, list) else []
+                         scraped_value_list = scraped_value if isinstance(scraped_value, list) else []
 
                          if len(db_value_list) != len(scraped_value_list):
-                              print(f"{key} -- {db_value} changed_to {scraped_value}")
+                              print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
                     # Handle numbers
                     elif key in [
                          'price', 'occupancy', 'suites', 'storeys', 'one_bed_starting_from',
-                         'price_per_sqft', 'avg_price_per_sqft', 'city_avg_price_per_sqft',
-                         'parking_cost', 'parkin_maintenance', 'storage_cost'
+                         'two_bed_starting_from','price_per_sqft', 'avg_price_per_sqft', 'city_avg_price_per_sqft',
+                         'parking_cost', 'parking_maintenance', 'storage_cost'
                     ]:
                          if db_value is not None and scraped_value is not None:
                               try:
@@ -199,12 +215,22 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
 
                     # Handle dictionaries
                     elif key == "floor_plan":
-                         diff = DeepDiff(db_value, scraped_value, ignore_order=True).to_dict()
+                         
+                         if isinstance(db_value, str):
+                              try:
+                                   db_value_dict = json.loads(db_value)
+                              except json.JSONDecodeError:
+                                   db_value_dict = {}
+                         else:
+                              db_value_dict = db_value if isinstance(db_value, dict) else {}
+                         scraped_value_dict = scraped_value if isinstance(scraped_value, dict)  else {}
+
+                         diff = DeepDiff(db_value_dict, scraped_value_dict, ignore_order=True).to_dict()
                          if diff:
-                              print(f"{key} -- {db_value} changed_to {scraped_value}")
+                              print(f"{key} -- {db_value_dict} changed_to {scraped_value_dict}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
-
+                         
                     # Handle strings
                     else:
                          if str(db_value) != str(scraped_value):
@@ -215,7 +241,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
           if VALUE_CHANGED or IMAGES_CHANGED:
                changed_row['id'] = db_row['id']
                changed_row['link'] = scraped_data['link']
-               changed_row['updated_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+               changed_row['updated_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
                changed_extracted_data.update(changed_row)
 
      else:
@@ -230,42 +256,26 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
 
 
 def update_data(changed_data: dict) -> None:
-    import math
+     cursor, db_connection = database_connector(autocommit=False)
+     update_fields = [f'{key} = %s' for key in changed_data.keys() if key not in ['id', 'link']]
+     update_query = f"UPDATE {DB_TABLE_NAME} SET {','.join(update_fields)} WHERE link = %s"
+     
+     update_values = [json.dumps(changed_data[key]) for key in changed_data.keys() if key not in ['id', 'link']]
+     update_values.append(changed_data['link'])
 
-    if not changed_data:
-        print("No data to update.")
-        return
-
-    # Replace blank and NaN values with None
-    preprocessed_data = {
-        key: None if value in ["", None] or (isinstance(value, float) and math.isnan(value)) else value
-        for key, value in changed_data.items()
-    }
-
-    cursor, db_connection = database_connector(autocommit=False)
-    update_fields = [f'{key} = %s' for key in preprocessed_data.keys() if key not in ['id', 'link']]
-    update_query = f"UPDATE {DB_TABLE_NAME} SET {','.join(update_fields)} WHERE link = %s"
-    update_values = [
-        preprocessed_data[key] if preprocessed_data[key] is not None else None
-        for key in preprocessed_data
-        if key not in ['id', 'link']
-    ]
-    update_values.append(preprocessed_data['link'])
-
-    try:
-        cursor.execute(update_query, tuple(update_values))
-        db_connection.commit()
-        print(f"Successfully updated data for the link: {preprocessed_data['link']}")
-    except Exception as e:
-        db_connection.rollback()
-        print(f"Error while updating the data in Database for link ---> {preprocessed_data['link']}: {e}")
+     try:
+          cursor.execute(update_query, tuple(update_values))
+          db_connection.commit()
+          print(f"Successfully updated data for the link: {changed_data['link']}")
+     except Exception as e:
+          db_connection.rollback()
+          print(f"Error while updating the data in Database for link ---> {changed_data['link']}: {e}")
 
 
 def link_runner(i, link, db_data):
      try:
           print(i, link)       
           result = fetch_link(i, link)
-          # print(result)
           
           if result['status_404'] == 1:
                deleted_not_found_item(result)
@@ -284,10 +294,9 @@ def link_runner(i, link, db_data):
 def main():
      engine = connect_database_with_sql_alchemy()
      db_data = get_database_data(engine)
-
-     # print(db_data)
      
-     links = db_data['link'].tolist()
+     # links = db_data['link'].tolist()
+     links = ['https://precondo.ca/strata-condos/']
      
      if len(links) > 0:
           for i,link in enumerate(links):

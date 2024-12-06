@@ -2,6 +2,7 @@ import re
 import uuid
 import requests
 import pandas as pd
+
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -289,14 +290,13 @@ def price_and_incentives(soup):
                     elif key == 'Avg Price Per Sqft':
                          pricing_incentive["avg_price_per_sqft"] = None if value is None else extract_number(value)
                          pricing_incentive["avg_price_per_sqft_unit"] = currency_symbol if value is not None else None
-                    elif key and value:
-                         pricing_incentive[key] = value
+                    elif key == 'Incentives':
+                         pricing_incentive['incentives'] = None if value in [None, 'N/A']  else value
 
           return pricing_incentive
 
      except Exception as e:
           print(f"Error while getting incentive: {e}")
-
      
 def floor_plan(soup):
      try:
@@ -413,7 +413,7 @@ def main_scraper(i, url):
                **(price_and_incentive if price_and_incentive else {}),
                'details': description,
                'amenities': amenities if amenities else [],
-               **(floor_pln if floor_pln else {}),  # Standardize keys
+               'floor_plan' : floor_pln if floor_pln else {},  # Standardize keys
                'last_updated': last_update,
                'created_at': datetime.now().strftime("%y-%m-%d %H:%M:%S"),
                'updated_at': None,
