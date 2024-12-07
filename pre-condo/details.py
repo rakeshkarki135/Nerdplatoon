@@ -413,7 +413,7 @@ def main_scraper(i, url):
                **(price_and_incentive if price_and_incentive else {}),
                'details': description,
                'amenities': amenities if amenities else [],
-               'floor_plan' : floor_pln if floor_pln else {},  # Standardize keys
+               **(floor_pln if floor_pln else {}),  # Standardize keys
                'last_updated': last_update,
                'created_at': datetime.now().strftime("%y-%m-%d %H:%M:%S"),
                'updated_at': None,

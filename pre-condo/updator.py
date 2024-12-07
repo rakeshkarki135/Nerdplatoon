@@ -155,8 +155,8 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
           for key, scraped_value in scraped_data.items():
                if key in db_row.columns:
                     db_value = db_row[key].iloc[0]
-                    db_value = None if db_value in [None, '', 'nan','null'] else db_value
-                    # scraped_value = None if scraped_value == ' ' else scraped_value
+                    db_value = None if db_value in ["", 'nan','null'] else db_value
+                    scraped_value = None if scraped_value in ['',0,] else scraped_value
 
                     # print(f"Processing key: {key}, db_value: {db_value}, scraped_value: {scraped_value}")
                     
@@ -164,14 +164,11 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                     if key == 'img_src':
                          
                          if isinstance(db_value, str):
-                              try:
-                                   db_value_list = json.loads(db_value)
-                              except json.JSONDecodeError:
-                                   db_value_list = []  # If it's not a valid JSON, assume it's an empty list
+                              db_value_list = db_value.split(',') 
                          else:
-                              db_value_list = db_value if isinstance(db_value, list) else []
+                              db_value_list = db_value if db_value else []
                               
-                         scraped_value_list = scraped_value if isinstance(scraped_value, list) else []
+                         scraped_value_list = scraped_value or []
 
                          if len(db_value_list) != len(scraped_value_list):
                               print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
@@ -179,14 +176,13 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                               changed_row[key] = scraped_value
 
                     elif key == "amenities":
+                         
                          if isinstance(db_value, str):
-                              try:
-                                   db_value_list = json.loads(db_value)
-                              except json.JSONDecodeError:
-                                   db_value_list = []  # If it's not a valid JSON, assume it's an empty list
+                              db_value_list = db_value.split(',') 
                          else:
-                              db_value_list = db_value if isinstance(db_value, list) else []
-                         scraped_value_list = scraped_value if isinstance(scraped_value, list) else []
+                              db_value_list = db_value or []
+                              
+                         scraped_value_list = scraped_value or []
 
                          if len(db_value_list) != len(scraped_value_list):
                               print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
@@ -219,11 +215,15 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                          if isinstance(db_value, str):
                               try:
                                    db_value_dict = json.loads(db_value)
+                                   # print(db_value_dict)
+                                   # print("")
                               except json.JSONDecodeError:
-                                   db_value_dict = {}
+                                   print("Error while changing db_value to json data --> {db_value}")
+                                   db_value_dict = db_value or {}
                          else:
-                              db_value_dict = db_value if isinstance(db_value, dict) else {}
-                         scraped_value_dict = scraped_value if isinstance(scraped_value, dict)  else {}
+                              db_value_dict = db_value or {}
+                         scraped_value_dict = scraped_value or {}
+                         # print(scraped_value_dict)
 
                          diff = DeepDiff(db_value_dict, scraped_value_dict, ignore_order=True).to_dict()
                          if diff:
@@ -241,7 +241,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
           if VALUE_CHANGED or IMAGES_CHANGED:
                changed_row['id'] = db_row['id']
                changed_row['link'] = scraped_data['link']
-               changed_row['updated_at'] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
+               changed_row['updated_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                changed_extracted_data.update(changed_row)
 
      else:
@@ -267,6 +267,7 @@ def update_data(changed_data: dict) -> None:
           cursor.execute(update_query, tuple(update_values))
           db_connection.commit()
           print(f"Successfully updated data for the link: {changed_data['link']}")
+          print("")
      except Exception as e:
           db_connection.rollback()
           print(f"Error while updating the data in Database for link ---> {changed_data['link']}: {e}")
@@ -286,6 +287,7 @@ def link_runner(i, link, db_data):
                     update_data(changed_data)
                else:
                     print(f"<--- No Change ---> on link <--- {link} --->")
+                    print("")
 
      except Exception as e:
           print(f"Error occured while gettng data in link_runner from link ----> {link}  : {e}")
@@ -295,8 +297,8 @@ def main():
      engine = connect_database_with_sql_alchemy()
      db_data = get_database_data(engine)
      
-     # links = db_data['link'].tolist()
-     links = ['https://precondo.ca/strata-condos/']
+     links = db_data['link'].tolist()
+     # links = ['https://precondo.ca/strata-condos/']
      
      if len(links) > 0:
           for i,link in enumerate(links):
