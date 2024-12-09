@@ -2,6 +2,7 @@ import pandas as pd
 import requests 
 import re
 import json
+import logging
 
 from decouple import config
 from sqlalchemy import create_engine
@@ -12,6 +13,7 @@ from typing import Union, Tuple
 from details import main_scraper
 from base.db_connection import database_connector
 
+logger = logging.getLogger("updator")
 
 mysql_alchemy_url = str(config("MYSQL_ALCHEMY_URL"))
 DB_TABLE_NAME = "precondo"
@@ -41,7 +43,7 @@ def connect_database_with_sql_alchemy():
           return engine
      
      except Exception as e:
-          print(f"Error occured while connecting with pymysql : {e}")
+          logger.error("Error occured while connecting with pymysql", exc_info=e)
 
 
 def get_database_data(engine):
@@ -87,7 +89,7 @@ def fetch_link(i, link : str) -> dict:
                status_404 = 0
                
           except Exception as e:
-               print(f"Error while scraping data from link in fetch_url --> {link} : {e}")
+               logger.error("Error while scraping data from link in fetch_url --> {link}", exc_info=e)
                img_src = price = price_range = occupancy = suites = storeys = developer = one_bed_starting_from = two_bed_starting_from = price_per_sqft = avg_price_per_sqft = city_avg_price_per_sqft = development_levies = parking_cost = parking_maintenance = assignment_fee_free = storage_cost = deposit_structure = details = amenities = last_updated = floor_plan = incentives = None
                
                status_404 = 1
@@ -139,7 +141,7 @@ def deleted_not_found_item(result : dict) -> None:
      cursor, db_connection = database_connector(autocommit=True)
      cursor.execute(sql_query, query_tuple)
      db_connection.commit()
-     print(f"Successfully deleted the data of link : {result['link']}")
+     logger.info(f"Successfully deleted the data of link : {result['link']}")
      
      
 def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union[dict, None], bool]:
@@ -171,7 +173,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                          scraped_value_list = scraped_value or []
 
                          if len(db_value_list) != len(scraped_value_list):
-                              print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
+                              logger.info(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
                               IMAGES_CHANGED = True
                               changed_row[key] = scraped_value
 
@@ -185,7 +187,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                          scraped_value_list = scraped_value or []
 
                          if len(db_value_list) != len(scraped_value_list):
-                              print(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
+                              logger.info(f"{key} -- {db_value_list} changed_to {scraped_value_list}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
@@ -198,12 +200,12 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                          if db_value is not None and scraped_value is not None:
                               try:
                                    if float(db_value) != float(scraped_value):
-                                        print(f"{key} -- {db_value} changed_to {scraped_value}")
+                                        logger.info(f"{key} -- {db_value} changed_to {scraped_value}")
                                         VALUE_CHANGED = True
                                         changed_row[key] = scraped_value
                               except ValueError:
                                    if str(db_value) != str(scraped_value):
-                                        print(f"{key} -- {db_value} changed_to {scraped_value}")
+                                        logger.info(f"{key} -- {db_value} changed_to {scraped_value}")
                                         VALUE_CHANGED = True
                                         changed_row[key] = scraped_value
                          else:
@@ -218,7 +220,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                                    # print(db_value_dict)
                                    # print("")
                               except json.JSONDecodeError:
-                                   print("Error while changing db_value to json data --> {db_value}")
+                                   logger.info(f"Error while changing db_value to json data --> {db_value}")
                                    db_value_dict = db_value or {}
                          else:
                               db_value_dict = db_value or {}
@@ -227,14 +229,14 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
 
                          diff = DeepDiff(db_value_dict, scraped_value_dict, ignore_order=True).to_dict()
                          if diff:
-                              print(f"{key} -- {db_value_dict} changed_to {scraped_value_dict}")
+                              logger.info(f"{key} -- {db_value_dict} changed_to {scraped_value_dict}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
                          
                     # Handle strings
                     else:
                          if str(db_value) != str(scraped_value):
-                              print(f"{key} -- {db_value} changed_to {scraped_value}")
+                              logger.info(f"{key} -- {db_value} changed_to {scraped_value}")
                               VALUE_CHANGED = True
                               changed_row[key] = scraped_value
 
@@ -245,7 +247,7 @@ def validation_with_db(db_data: pd.DataFrame, scraped_data: dict) -> Tuple[Union
                changed_extracted_data.update(changed_row)
 
      else:
-          print(f"Link not found in database: {scraped_data['link']}")
+          logger.info(f"Link not found in database: {scraped_data['link']}")
           VALUE_CHANGED = True
           changed_extracted_data.update(scraped_data)
 
@@ -266,8 +268,8 @@ def update_data(changed_data: dict) -> None:
      try:
           cursor.execute(update_query, tuple(update_values))
           db_connection.commit()
-          print(f"Successfully updated data for the link: {changed_data['link']}")
-          print("")
+          logger.info(f"Successfully updated data for the link: {changed_data['link']}")
+          logger.info("")
      except Exception as e:
           db_connection.rollback()
           print(f"Error while updating the data in Database for link ---> {changed_data['link']}: {e}")
@@ -286,11 +288,11 @@ def link_runner(i, link, db_data):
                if changed_data is not None and isinstance(changed_data, dict):
                     update_data(changed_data)
                else:
-                    print(f"<--- No Change ---> on link <--- {link} --->")
-                    print("")
+                    logger.info(f"<--- No Change ---> on link <--- {link} --->")
+                    logger.info("")
 
      except Exception as e:
-          print(f"Error occured while gettng data in link_runner from link ----> {link}  : {e}")
+          logger.error(f"Error occured while gettng data in link_runner from link ----> {link}", exc_info=e)
 
 
 def main():
@@ -304,7 +306,7 @@ def main():
           for i,link in enumerate(links):
                link_runner(i, link, db_data)
      
-     print("Successfully updated All the Data")
+     logger.info("Successfully updated All the Data")
 
 
 
