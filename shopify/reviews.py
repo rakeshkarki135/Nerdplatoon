@@ -1,32 +1,37 @@
 import requests 
 import logging
 import pandas as pd
+import time
 
 from bs4 import BeautifulSoup
 from datetime import datetime
+from selenium import webdriver
 
 from base import log_config
 logger = logging.getLogger("reviews")
 
+def driver_initialization():
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")  
+    driver = webdriver.Chrome(options=options)
+    return driver
+
 
 def soup_creator(url):
-    response = requests.get(url, timeout=6)
-    html_content = response.content
-    if response.status_code != 200:
-        logger.error(f"Cannot create the soup at link ---> {url}, status_code --->{response.status_code}")
-        return
+    driver = driver_initialization()
+    driver.get(url)
 
-    soup = BeautifulSoup(html_content, 'lxml')
-    
+    time.sleep(3)
+
+    page_source = driver.page_source
+    soup = BeautifulSoup(page_source, 'lxml')
     section = soup.find("section", id="arp-reviews")
 
     if section is not None:
-        container = section.find("div", class_ = "tw-col-span-full md:tw-col-span-9 lg:tw-col-span-8 lg:tw-pl-gutter--desktop")
+        return section
+        # container = section.find("div", class_ = "tw-col-span-full md:tw-col-span-9 lg:tw-col-span-8 lg:tw-pl-gutter--desktop")
 
-        if container is not None:
-            return container
-
-
+    
 def rating_scraper(soup):
     try:
         rating_element = soup.find("div", class_ = "tw-flex tw-relative tw-space-x-0.5 tw-w-[88px] tw-h-md")
@@ -66,6 +71,8 @@ def description_scraper(soup):
 
 
 def store_detail_scraper(soup):
+    title, location, span = None, None, None 
+
     try:
         title_element = soup.find("div", class_ = "tw-text-heading-xs tw-text-fg-primary tw-overflow-hidden tw-text-ellipsis tw-whitespace-nowrap")
         
@@ -80,11 +87,9 @@ def store_detail_scraper(soup):
                 if span_element is not None:
                     span = span_element.text.strip()
                     
-        return title, location, span
-                    
+        return title, location, span         
     except Exception as e:
         logger.error("something went wrong while getting store details", exc_info=e)
-        
 
 
 def main_detail_scraper(soup):
@@ -120,59 +125,67 @@ def main_detail_scraper(soup):
 
 
 def next_page_link_scraper(soup):
+    url = None
     try:
-        # main_container = soup.find("div", class_ = "tw-flex tw-justify-center tw-py-2xl")
+        main_container = soup.find("div", class_ = "tw-flex tw-justify-center tw-py-2xl")
         # logger.info(main_container)
         
-        # if main_container is not None:
-        # pagination_container = soup.find("div", class_ = "tw-flex tw-items-center")
-        # logger.info(pagination_container)
+        if main_container is not None:
+            pagination_container = main_container.find("div", {"aria-label":"pagination"})
         
-        # if pagination_container is not None:
-        next_page_element = soup.find("a", {"rel":"next"})
-        logger.info(next_page_element)
-        
-        if next_page_element is not None:
-            url = next_page_element.get("href")
-        else:
-            url = None
-            
-        logger.info(url)
-    # else:
-        #     logger.info("pagination continer not found")
+            if pagination_container is not None:
+                next_page_element = pagination_container.find("a", {"rel":"next"})
                 
-        # else:
-        #     logger.info("main container not found")
+                if next_page_element is not None:
+                    url = next_page_element.get("href")
+                    logger.info(url)
+            else:
+                logger.info("pagination continer not found")
+                    
+        else:
+            logger.info("main container not found")
             
         return url   
     except Exception as e:
         logger.error("something went wrong while getting next page", exc_info=e)
-    
+
 
 def main():
     url = "https://apps.shopify.com/google-reviews-trust-badge/reviews?search_id=e71d14c6-b497-4b5b-843c-918c19b9d815"
-    
     all_reviews = []
+
     while True:
         try:
             soup = soup_creator(url)
+            if not soup:
+                logger.info("soup is not found")
+                return
+            
             reviews = main_detail_scraper(soup)
+
+            if not reviews:
+                logger.info("review lis is empty")
+                return 
             all_reviews.extend(reviews)
             
             logger.info(f"link succefully processed  ---> {url}")
             
             url = next_page_link_scraper(soup)
-            
-            if url is None:
+            if not url:
+                logger.info("No more pages to process. Ending loop.")
                 break
+
+            logger.info(f"Proceeding to next page: {url}")
             
         except Exception as e:
-            logger.info("while loop is terminated, all reviews extracted", exc_info=e)
-    
+            logger.info("something went wrong in while loop", exc_info=e)
+
+
     df = pd.DataFrame(all_reviews)
     df.to_csv("review.csv", index=False)
+
+    logger.info("CSV file is generated")
     
-            
 
 if __name__ == "__main__":
     main()
