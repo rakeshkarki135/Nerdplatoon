@@ -1,12 +1,16 @@
 import json
 import requests
 import logging
+import requests
+import pandas as pd
+
+from datetime import datetime
 
 from base.log_config import dictConfig
 logger = logging.getLogger("xyz_storage")
 
 
-import requests
+
 
 url = "https://dashboard.n49.com/native/filterReviews/null/jhs0krj2kdzgwej4s"
 
@@ -58,23 +62,122 @@ headers = {
      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
 }
 
+def update_payload_with_last_evaluated_key(api_response):
+     last_evaluated_key = api_response.get('LastEvaluatedKey', [])
+     if last_evaluated_key:
+          payload['LastEvaluatedKey'] = last_evaluated_key
+          logger.info(f"Updated payload with LastEvaluatedKey: {last_evaluated_key}")
+     else:
+          logger.info("No LastEvaluatedKey found in the response.")
 
-try:
-     response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
-     logger.info(f"Status Code: {response.status_code}")
-     logger.info(f"Response Text: {response.text}")
 
-     try:
-          json_data = response.json()
-          # Extract specific parts (e.g., form fields)
-          reviews = json_data.get('reviews')
-               
-          # Save extracted fields to a file
-          with open('sample.json', 'w') as file:
-               json.dump(reviews, file, indent=4)
-               logger.info("Extracted fields saved to extracted_fields.json")
-     except ValueError as e:
-          logger.error("Failed to parse response as JSON", exc_info=e)
+def sample_generator(json_data):
+     with open("sample.json","w") as file:
+          json.dump(json_data, file, indent=4)
+          logger.info("Sample file generated")
 
-except Exception as e:
-     logger.error("Failed to make api request", exc_info=e)
+base_payload = {
+     "LastEvaluatedKey": []
+}
+
+
+def format_timestamp(json_date):
+     if json_date is not None:
+          date = datetime.utcfromtimestamp(json_date / 1000).strftime("%Y-%m-%d %H:%M:%S")
+     return date
+
+
+def all_data_extractor():
+     all_reviews = []
+     payload = base_payload.copy()  # Start with an empty LastEvaluatedKey
+
+     while True:
+          try:
+               response = requests.post(url, json=payload, headers=headers, params=querystring)
+               logger.info(f"Status Code: {response.status_code}")
+
+               if response.status_code != 200:
+                    logger.error("API request failed.")
+                    break
+
+               try:
+                    json_data = response.json()
+               except Exception as e:
+                    logger.error(f"something went wrong while changing data in json format", exc_info=e)
+                    logger.debug(f"Raw response : {response.text}")
+                    break
+
+               # Collect reviews
+               reviews_data = json_data.get('reviews', [])
+               for item in reviews_data:
+                    review = item.get("content", None)
+                    json_date = item.get("dateCreated", None)
+                    posted_date = format_timestamp(json_date)
+                    rating = item.get("rating", None)
+                    review_type = item.get("reviewType", None)
+
+                    # User details
+                    user_detail = item.get("user", {})
+                    email = user_detail.get("email", None)
+                    fullname = user_detail.get("fullName", None)
+                    name = fullname or user_detail.get("firstName", None)
+
+                    # Location
+                    location_obj = item.get("entityInfo", {})
+                    location = None
+                    if location_obj:
+                         location_data = location_obj.get("reviewFeedUrls", {})
+                         location = location_data.get("5734f48a0b64d7382829fdf7", None)
+                         if location:
+                              location = location.split("/")[4] if len(location.split("/")) > 3 else None
+
+                    # Append review data
+                    all_reviews.append({
+                         "Review": review,
+                         "PostedDate": posted_date,
+                         "Rating": rating,
+                         "ReviewType": review_type,
+                         "Email": email,
+                         "Name": name,
+                         "Location": location
+                    })
+
+                    logger.info(f"collected reviews --> {len(all_reviews)}")
+
+               # Update LastEvaluatedKey for pagination
+               last_evaluated_key = json_data.get('LastEvaluatedKey', None)
+               if last_evaluated_key:
+                    payload["LastEvaluatedKey"] = last_evaluated_key
+                    logger.info(f"Fetching next batch with LastEvaluatedKey: {last_evaluated_key}")
+                    logger.info("")
+               else:
+                    logger.info("No more pages to fetch.")
+                    break
+
+          except ValueError as e:
+               logger.error("Failed to parse response as JSON", exc_info=e)
+               break
+          except Exception as e:
+               logger.error("Failed to make API request", exc_info=e)
+               break
+
+
+     # Create DataFrame from collected data
+     reviews_df = pd.DataFrame(all_reviews)
+     logger.info(f"Collected {len(all_reviews)} reviews.")
+
+     return reviews_df
+
+
+def main():
+     df = all_data_extractor()
+     
+     if not df.empty:
+          df.to_csv("details.csv", index=False)
+          logger.info("Scraping Completed")
+     else:
+          logger.error("Something went wrong.Empty csv file is generated")
+
+
+if __name__ == "__main__":
+     main()
