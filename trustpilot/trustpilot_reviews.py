@@ -36,8 +36,8 @@ def main_review_extractor(soup):
             content_boxes = main_container.find_all("div", class_ = "styles_reviewCardInner__EwDq2")
             logger.info(len(content_boxes))
 
-            for box in content_boxes:
-                
+            # for box in content_boxes:
+
 
 
 
