@@ -1,0 +1,52 @@
+[INFO 2024-12-11 10:32:42,328] [xyz_storage:65] : Status Code: 405
+[ERROR 2024-12-11 10:32:42,430] [xyz_storage:78] : Failed to parse response as JSON
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\venv\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\Nerdplatoon\xyz_storage\details.py", line 69, in <module>
+    json_data = response.json()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\venv\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO 2024-12-11 10:34:32,813] [xyz_storage:64] : Status Code: 405
+[ERROR 2024-12-11 10:34:32,831] [xyz_storage:77] : Failed to parse response as JSON
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\venv\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\Nerdplatoon\xyz_storage\details.py", line 68, in <module>
+    json_data = response.json()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\OneDrive\Desktop\git_clone\venv\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO 2024-12-11 10:36:12,250] [xyz_storage:64] : Status Code: 200
+[INFO 2024-12-11 10:36:13,046] [xyz_storage:75] : Extracted fields saved to extracted_fields.json
