@@ -51,10 +51,10 @@ def link_extractor(soup):
                 
                 for item in list_items:
                     link_element = item.find("a")
-                    title = item.get_text(strip=True)  # Extract clean title text
                     
                     if link_element:
                         raw_link = link_element.get('href')
+                        title = link_element.text.strip()
                         
                         if raw_link:  # Ensure the link is not None or empty
                             # Normalize the link using urljoin
@@ -62,9 +62,10 @@ def link_extractor(soup):
                             
                             # Check for duplicates using the seen_links set
                             if link not in seen_links:
-                                seen_links.add(link)  # Add the link to the set
+                                seen_links.add(link) 
+                                
                                 links.append(link)  # Append unique link to the list
-                                titles.append(title)  # Append title to titles list
+                                titles.append(str(title))  # Append title to titles list
                                 items.append({"title": title, "link": link})
         
         return items  # Return a list of dictionaries for better structure
@@ -84,7 +85,7 @@ def main():
     
     df = pd.DataFrame(items)
     
-    df.to_csv("links.csv")
+    df.to_csv("links.csv", index=False)
     
     
 if __name__ == "__main__":
