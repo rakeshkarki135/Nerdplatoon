@@ -1,6 +1,7 @@
 import requests    
 import logging
 import pandas as pd
+
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
@@ -31,15 +32,13 @@ def soup_creator(url):
     return container
     
     
-    
-
 
 def link_extractor(soup):
     base_url = "https://mesora.org"
     links = []
     titles = []
     seen_links = set()  # A set to track unique links
-    items = {}
+    items = []
     
     try:
         table = soup.find("table", class_="Times2")
@@ -52,8 +51,9 @@ def link_extractor(soup):
                 
                 for item in list_items:
                     link_element = item.find("a")
+                    title = item.get_text(strip=True)  # Extract clean title text
                     
-                    if link_element is not None:
+                    if link_element:
                         raw_link = link_element.get('href')
                         
                         if raw_link:  # Ensure the link is not None or empty
@@ -64,19 +64,15 @@ def link_extractor(soup):
                             if link not in seen_links:
                                 seen_links.add(link)  # Add the link to the set
                                 links.append(link)  # Append unique link to the list
-                                title = link_element.text.strip()
-                                titles.append(title)  # Append the corresponding title
-            
-        items = {
-            'link': links,
-            'title': titles
-        }
+                                titles.append(title)  # Append title to titles list
+                                items.append({"title": title, "link": link})
         
-        return items
+        return items  # Return a list of dictionaries for better structure
     
     except Exception as e:
-        print(f"An error occurred: {e}")
-        return items
+        logger.error("Something went wrong while extracting links and titles", exc_info=e)
+        return []
+
 
 
 def main():
