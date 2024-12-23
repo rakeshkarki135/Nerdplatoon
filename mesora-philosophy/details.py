@@ -2,7 +2,8 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 
-from 
+from logging import getLogger
+logger = getLogger("details")
 
 def soup_creater(url):
     response = requests.get(url)
@@ -11,19 +12,23 @@ def soup_creater(url):
     return soup
 
 
-def detail_extractor(link, soup):
-    pass
+def detail_extractor(soup):
+    details = soup.find("dl")
+    
+    if details:
+        cleaned_details = remove_attributes
+        
 
 
 def multiple_link_runner():
     df = pd.read_csv("links.csv")
-    links = df['link'].tolist()
+    # links = df['link'].tolist()
+    links=["https://mesora.org/intermarriage.html"]
     
     if len(links) > 0:
         for link in links:
             soup = soup_creater(link)
-            logge
-            detail_extractor(link, soup)
+            detail_extractor(soup)
             break
     
 
