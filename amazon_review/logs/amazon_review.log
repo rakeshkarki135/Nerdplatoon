@@ -1,0 +1,18 @@
+[ERROR 2024-12-27 16:17:51,995] [reviews:49] : something went wrong
+Traceback (most recent call last):
+  File "/home/nerdplatoon/django_tsks/student/venv/lib/python3.9/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/nerdplatoon/micromamba/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/nerdplatoon/micromamba/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 2 column 1 (char 38)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/amazon_review/review.py", line 42, in <module>
+    json_data = response.json()
+  File "/home/nerdplatoon/django_tsks/student/venv/lib/python3.9/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Extra data: line 2 column 1 (char 38)
