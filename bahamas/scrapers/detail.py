@@ -267,8 +267,10 @@ def detail_Scraper(url, driver, i, df):
      
 
 def url_Extractor(driver, df):
-          link_df = pd.read_csv('urls.csv')
-          urls = link_df['link']
+          # link_df = pd.read_csv('urls.csv')
+          link_df = pd.read_csv('xml_links.csv')
+          # urls = link_df['link']
+          urls = link_df['url']
           
           for i,url in enumerate(urls):
                try:
@@ -286,7 +288,7 @@ def main():
      
      driver.quit()
      
-     df.to_csv('details.csv', index=False)
+     df.to_csv('xml_details.csv', index=False)
      
      print("Scraping Completed")
      
