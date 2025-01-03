@@ -1,0 +1,56 @@
+[INFO:2025-01-03 14:31:16,555] [links:42] : soup is found
+[INFO:2025-01-03 14:48:41,109] [links:18] : soup is found
+[ERROR:2025-01-03 14:48:41,109] [links:31] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 14:48:42,200] [links:18] : soup is found
+[ERROR:2025-01-03 14:48:42,200] [links:31] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 14:48:42,256] [links:18] : soup is found
+[ERROR:2025-01-03 14:48:42,256] [links:31] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 14:52:01,421] [links:18] : soup is found
+[ERROR:2025-01-03 14:52:01,422] [links:35] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 14:52:02,530] [links:18] : soup is found
+[ERROR:2025-01-03 14:52:02,530] [links:35] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 14:52:02,585] [links:18] : soup is found
+[ERROR:2025-01-03 14:52:02,585] [links:35] : Failed to extract links
+Traceback (most recent call last):
+  File "/home/nerdplatoon/scraping/Nerdplatoon/bahamas/xml_scraper/xml_links.py", line 24, in url_extractor
+    url_elements = soup.find_all("xhtml:link", {"hreflang":"en"})
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[INFO:2025-01-03 15:00:50,098] [links:49] : Links extracted from ---> ./xml_files/sitemap_4.xml
+[INFO:2025-01-03 15:00:51,283] [links:49] : Links extracted from ---> ./xml_files/sitemap_5.xml
+[INFO:2025-01-03 15:00:51,349] [links:49] : Links extracted from ---> ./xml_files/sitemap_6.xml
+[INFO:2025-01-03 15:00:51,364] [links:49] : Links extracted from ---> ./xml_files/sitemap_8 (2).xml
+[INFO:2025-01-03 15:02:39,194] [links:49] : Links extracted from ---> ./xml_files/sitemap_4.xml
+[INFO:2025-01-03 15:02:40,306] [links:49] : Links extracted from ---> ./xml_files/sitemap_5.xml
+[INFO:2025-01-03 15:02:40,367] [links:49] : Links extracted from ---> ./xml_files/sitemap_6.xml
+[INFO:2025-01-03 15:03:22,946] [links:49] : Links extracted from ---> ./xml_files/sitemap_4.xml
+[INFO:2025-01-03 15:03:24,102] [links:49] : Links extracted from ---> ./xml_files/sitemap_5.xml
+[INFO:2025-01-03 15:03:24,168] [links:49] : Links extracted from ---> ./xml_files/sitemap_6.xml
+[INFO:2025-01-03 15:03:24,180] [links:49] : Links extracted from ---> ./xml_files/sitemap_8.xml
+[INFO:2025-01-03 15:05:08,651] [links:51] : Links extracted from ---> ./xml_files/sitemap_4.xml
+[INFO:2025-01-03 15:05:09,774] [links:51] : Links extracted from ---> ./xml_files/sitemap_5.xml
+[INFO:2025-01-03 15:05:09,837] [links:51] : Links extracted from ---> ./xml_files/sitemap_6.xml
+[INFO:2025-01-03 15:05:09,849] [links:51] : Links extracted from ---> ./xml_files/sitemap_8.xml
+[INFO:2025-01-03 15:07:32,380] [links:50] : Links extracted from ---> ./xml_files/sitemap_4.xml
+[INFO:2025-01-03 15:07:33,489] [links:50] : Links extracted from ---> ./xml_files/sitemap_5.xml
+[INFO:2025-01-03 15:07:33,549] [links:50] : Links extracted from ---> ./xml_files/sitemap_6.xml
+[INFO:2025-01-03 15:07:33,558] [links:53] : No data to create csv files in  --> {name}
