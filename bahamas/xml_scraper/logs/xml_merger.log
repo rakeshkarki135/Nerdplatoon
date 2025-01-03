@@ -1,0 +1,7 @@
+[ERROR:2025-01-03 17:19:25,923] [merger:16] : Failed to merge CSV files, Error at --> xml_links.csv
+[ERROR:2025-01-03 17:19:25,924] [merger:16] : Failed to merge CSV files, Error at --> xml5_links.csv
+[ERROR:2025-01-03 17:19:25,924] [merger:16] : Failed to merge CSV files, Error at --> xml6_links.csv
+[INFO:2025-01-03 17:19:25,924] [merger:21] : No duplicate links found
+[INFO:2025-01-03 17:19:25,926] [merger:25] : Merging CSV file is Comleted
+[INFO:2025-01-03 17:21:31,221] [merger:25] : Merging CSV file is Comleted
+[INFO:2025-01-03 17:24:05,205] [merger:25] : Merging CSV file is Comleted

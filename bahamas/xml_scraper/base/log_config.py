@@ -44,6 +44,16 @@ dictConfig(
                 "backupCount": 10,
                 "filename": "./logs/xml_links.log",
                 "delay": True 
+            },
+            "merger_filehandlers":{
+                "level": "INFO",
+                "class": "logging.handlers.TimedRotatingFileHandler",
+                "formatter": "file",
+                "when": "midnight",
+                "interval": 1,
+                "backupCount": 10,
+                "filename": "./logs/xml_merger.log",
+                "delay": True 
             }
         },
         
@@ -58,6 +68,11 @@ dictConfig(
                 "level":"INFO",
                 "handlers":["console", "links_filehandlers"],
                 "propagate":False
+            },
+            "merger": {
+                "level": "INFO",
+                "handlers": ["console","merger_filehandlers"],
+                "propagate":False,
             }
         }
     }
